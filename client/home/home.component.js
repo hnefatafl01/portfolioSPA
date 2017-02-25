@@ -1,12 +1,12 @@
 (function() {
   'use strict';
   angular.module("app")
-    .component("main", {
-      controller: mainCtrl,
-      templateUrl: '/main/main.html'
+    .component("home", {
+      controller: homeCtrl,
+      templateUrl: '/home/home.html'
     })
 
-    function mainCtrl() {
+    function homeCtrl() {
       const vm = this;
 
       vm.$onInit = function(){
