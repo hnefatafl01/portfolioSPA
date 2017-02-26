@@ -19,7 +19,7 @@
       .state({
         name: 'resume',
         url: '/resume/resume',
-        component: 'resume',
+        component: 'home.resume',
       })
   }
 

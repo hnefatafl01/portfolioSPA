@@ -1,10 +1,11 @@
 (function() {
   'use strict';
 
-  module.("app").component("resume",{
-    controller: resumeCtrl,
-    templateUrl: '/resume/resume.html'
-  })
+  angular.module("app")
+    .component("home.resume", {
+      controller: resumeCtrl,
+      templateUrl: '/resume/resume.html'
+    })
 
   function resumeCtrl(){
     const vm = this;

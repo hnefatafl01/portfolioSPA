@@ -16,7 +16,7 @@
           </button>
 
           <div class="col-6">
-            <a class="navbar-brand" href="#">Kevin Erickson</a>
+            <a class="navbar-brand" ui-sref="home">Kevin Erickson</a>
           </div>
 
           <div class="collapse navbar-collapse col-6 justify-content-end" id="navbarNav">
@@ -44,10 +44,13 @@
     <ui-view></ui-view>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-    <script src="https://unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
     <script src="/home/home.component.js"></script>
+    <script src="/resume/resume.component.js"></script>
   </body>
 </html>
