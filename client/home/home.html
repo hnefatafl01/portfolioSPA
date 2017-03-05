@@ -1,7 +1,15 @@
-<div class="container container-fluid">
-    <div class="container">
-      <p>Main Things</p>
+<div class="container container-fluid" ng-repeat="project in $ctrl.projects track by $index">
+  <div class="row container justify-content-center">
+    <div class="tab dark-primary-color col"  ng-click="$ctrl.displayedIndex = $index">
+      <h4>{{project.title}}</h4>
     </div>
-
+  </div>
+  <div class="row container justify-space-between">
+    <div class="card default-primary-color col"
+         ng-if="$ctrl.displayedIndex === $index">
+      <img src="{{project.image}}">
+      <p>{{project.description}}</p>
+    </div>
+  </div>
 
 </div>

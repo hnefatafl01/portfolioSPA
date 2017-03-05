@@ -5,11 +5,13 @@
     <title>Kevin Erickson</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <base href="/">
+    <link href="style.scss"></link>
+    <link rel="stylesheet" href="palette.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <header>
-      <nav class="row navbar navbar-toggleable-md navbar-light">
+  <body class="light-primary-color">
+    <header class="dark-primary-color ">
+      <nav class="row navbar navbar-toggleable-md">
         <div class="container justify-content-around">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,7 +41,7 @@
 
       </nav>
     </header>
-
+    <section class="banner-image" ng-style="{'background-image':'url(images/montanaSunset.png)'}"></section>  
 
     <ui-view></ui-view>
 

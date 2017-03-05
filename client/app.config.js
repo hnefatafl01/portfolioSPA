@@ -8,19 +8,16 @@
 
   function configuration($stateProvider, $urlRouterProvider, $locationProvider){
 
-    $locationProvider.html5Mode(true)
-
     $stateProvider
       .state({
         name: 'home',
-        url: '/',
+        url: '/home',
         component: 'home',
       })
       .state({
         name: 'resume',
-        url: '/resume/resume',
+        url: '/resume',
         component: 'home.resume',
       })
   }
-
 }());
