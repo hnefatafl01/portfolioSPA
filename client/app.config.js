@@ -9,15 +9,22 @@
   function configuration($stateProvider, $urlRouterProvider, $locationProvider){
 
     $stateProvider
-      .state({
-        name: 'home',
-        url: '/home',
-        component: 'home',
-      })
-      .state({
-        name: 'resume',
-        url: '/resume',
-        component: 'home.resume',
-      })
+    // .state({
+    //   name: 'home.backdrop',
+      // url: '/home',
+    //   abstract: true,
+    //   component: 'home'
+    // })
+    .state({
+      name: 'home',
+      url: '/',
+      component: 'home'
+    })
+    .state({
+      name: 'home.resume',
+      url: '/resume',
+      component: 'home'
+    })
+
   }
 }());

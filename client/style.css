@@ -1,28 +1,60 @@
 body {
-  /*background-color: #F0F1F1;*/
-  /*background-color: #455A64;*/
+
 }
+
+span {
+  font-size: .25em;
+}
+
 .nav {
   color: #536DFE;
+
+}
+
+.banner-image {
+  height: 53vh;
+  width: 100vw;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  /*background-attachment: fixed;*/
+}
+
+#bio {
+  width: 90vw;
+  height: 60vh;
+  margin-bottom: 5vh;
+  margin-top:5vh;
+  opacity: .6;
+}
+
+#bio:hover {
+  opacity: 1;
+}
+
+.divider {
+  margin-top: 50vh;
+  width: 100vw;
+  height:8vh;
+}
+
+#projects {
+  z-index: 1;
 }
 
 .tab {
-  /*margin-left: -15px;
-  margin-right: -15vw;*/
   border-top: 1px solid #536DFE;
   border-right: 1px solid #536DFE;
   border-left: 1px solid #536DFE;
-  border-radius: 4px 4px 0px 0px ;
   margin-top: 10px;
   margin-bottom: -10px;
   height: 40px;
-  /*width:100vw;*/
   color: #536DFE;
   padding: .5em;
 }
 
 .card {
-  border-radius: 0px 0px 4px 4px;
   border: 1px solid #536DFE;
   color: #FFFFFF;
   height: 40vh;
@@ -30,14 +62,5 @@ body {
   padding: 15px;
   margin-top: 10px;
   margin-bottom: -10px;
-}
-
-.banner-image {
-  /*background-image: url('montanaSunset.png');*/
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
+  opacity: 0.6;
 }
