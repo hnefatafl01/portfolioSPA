@@ -12,7 +12,7 @@ span {
 }
 
 .banner-image {
-  height: 53vh;
+  height: 50vh;
   width: 100vw;
   z-index: -1;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ span {
 }
 
 #bio {
-  width: 90vw;
+  width: 100vw;
   height: 50vh;
   margin-bottom: 5vh;
   margin-top:5vh;
@@ -30,9 +30,18 @@ span {
 
 }
 
-/*#bio:hover {
-  opacity: 1;
-}*/
+
+#portrait {
+  /*margin-right: 3vw;*/
+}
+
+#about {
+  margin-top: 10px;
+  height: 50vh;
+  width: 110vw;
+}
+
+
 
 .divider {
   margin-top: 50vh;
@@ -50,13 +59,18 @@ span {
   border-left: 1px solid #3390df;
   margin-top: 10px;
   margin-bottom: -10px;
+  width: 47vw;
   height: 40px;
   color: #3390df;
   padding: .5em;
 }
 
-.card {
-  /*border: 1px solid #536DFE;*/
+.tab:hover {
+  background-color: #3390df;
+  color: #2a2a2a;
+}
+
+.box {
   color: #FFFFFF;
   height: 30vh;
   width:100vw;
@@ -64,15 +78,4 @@ span {
   margin-top: 10px;
   margin-bottom: -10px;
   opacity: 0.6;
-}
-
-#gradient {
-  /*background-image: linear-gradient(45deg,#455A64,#CFD8DC);*/
-  /*background-image: url('/images/honey_im_subtle.png');*/
-  /*z-index: 1;*/
-  /*width: 100vw;
-  height: 40vh;*/
-  /*background-color: #008c41;
-  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }

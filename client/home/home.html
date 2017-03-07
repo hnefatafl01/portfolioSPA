@@ -1,13 +1,13 @@
 
 <div class="container container-fluid">
   <div id="bio" class="row container">
-    <div class="col col-4">
+    <div id="portrait" class="box default-primary-color col col-4">
       <img src="http://placehold.it/200x300" alt="portrait">
       <h4></h4>
       <h4><i class="fa fa-envelope-square" aria-hidden="true">hnefatafl01@gmail.com</i></h4>
     </div>
     <div class="col col-8">
-      <div class="row container justify-content-center">
+      <div id="about" class="row container justify-content-center">
         <div class="default-primary-color col">
           <h2>About</h2>
           <p> Master cleanse succulents cardigan DIY viral. Before they sold out
@@ -26,21 +26,31 @@
   </div>
 
   <div class="row container">
-    <div class="card col col-4">
+    <div class="box default-primary-color col col-4">
       <h2>Skills</h2>
     </div>
 
     <div  id="projects"  class="col col-8">
       <div class="container justify-content-center"
            ng-repeat="project in $ctrl.projects">
-        <div class="tab dark-primary-color justify-content-space-around"
+        <div class="tab row dark-primary-color justify-content-space-between"
              ng-click="$ctrl.displayedIndex = $index">
-          <h4>{{project.title}} </h4>
-          <h5><span>{{project.version}}</span></h5>
-          <h5><span>{{project.date}}</span></h5>
+             <div class="col-6">
+                <h4>{{project.title}}</h4>
+             </div>
+             <div class="col">
+              <h5><span>{{project.version}}</span></h5>
+             </div>
+             <div class="col">
+              <h5><span>{{project.date}}</span></h5>
+             </div>
+             <div class="col-1">
+              <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+             </div>
+          <!-- <i href="{{}}" class="fa fa-github" aria-hidden="true"></i> -->
         </div>
 
-        <div class="card default-primary-color col"
+        <div class="box default-primary-color col"
              ng-if="$ctrl.displayedIndex === $index">
           <img src="{{project.image}}">
           <p>{{project.description}}</p>
