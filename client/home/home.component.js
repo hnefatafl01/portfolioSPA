@@ -21,19 +21,21 @@
           version: '1.0.0',
           description: 'A gamified scavenger hunt using google places API.',
           techImgs: ''
+        },{
+          title: 'Pandora\'\s Box',
+          version: '1.0.0',
+          description: 'Pandora\'\s Box is a mobile app and Internet of Things project designed to streamline and gamify interactions with parents and children on the subject of chores or tasks. It sets up a system where there is a tangible reward controlled by the mobile application.',
+          techImgs: ''
         }
       ];
 
-      vm.$onInit = function(){
+      vm.$onInit = function($index){
           console.log('main');
-          console.log(vm.projects[0].title);
-          // vm.showCard = false;
+          console.log(vm.projects[1].description);
+          vm.displayedIndex = false;
           vm.background = 'url(/images/montanaSunset.png)';
       }
 
-      // vm.toggleCard = function($index) {
-      //   vm.displayedIndex = $index;
-      //   vm.displayedIndex = !vm.displayedIndex;
-      // }
+
     }
 }());

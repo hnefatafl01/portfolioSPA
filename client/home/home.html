@@ -31,16 +31,15 @@
     </div>
 
     <div  id="projects"  class="col col-8">
-      <div class="row container justify-content-center"
-            ng-repeat="project in $ctrl.projects">
-        <div class="tab col dark-primary-color justify-content-space-around"  ng-click="$ctrl.displayedIndex = $index">
+      <div class="container justify-content-center"
+           ng-repeat="project in $ctrl.projects">
+        <div class="tab dark-primary-color justify-content-space-around"
+             ng-click="$ctrl.displayedIndex = $index">
           <h4>{{project.title}} </h4>
           <h5><span>{{project.version}}</span></h5>
           <h5><span>{{project.date}}</span></h5>
         </div>
-      </div>
 
-      <div class="row container justify-space-between">
         <div class="card default-primary-color col"
              ng-if="$ctrl.displayedIndex === $index">
           <img src="{{project.image}}">
@@ -49,4 +48,5 @@
       </div>
     </div>
 
+    </div>
   </div>
