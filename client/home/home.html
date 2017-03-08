@@ -25,13 +25,7 @@
     </div>
   </div>
 
-  <div class="row container">
-    <div class="box default-primary-color col col-4">
-      <h2>Skills</h2>
-    </div>
-  </div>
-
-    <div  id="projects"  class="col col-8">
+    <div  id="projects"  class="col col-12 justify-content-center">
       <div class="container justify-content-center"
            ng-repeat="project in $ctrl.projects">
         <div class="tab row container dark-primary-color justify-content-space-between"
@@ -53,10 +47,23 @@
 
         <div class="box default-primary-color col"
              ng-if="$ctrl.displayedIndex === $index">
-          <img src="{{project.image}}">
+          <img ng-src="{{project.image}}">
           <p>{{project.description}}</p>
         </div>
+
+
       </div>
+
+      <div id="tech" class="row container">
+        <div class="box default-primary-color col-12">
+          <h2>Tech Used</h2>
+          <div class="container flex-wrap" ng-repeat="imageUrl in $ctrl.images">
+            <img ng-src="{{imageUrl}}" alt="tech logo">
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
     </div>

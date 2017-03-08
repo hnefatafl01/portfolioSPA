@@ -8,13 +8,7 @@
 
     function homeCtrl() {
       const vm = this;
-      vm.images = [{
-        nodejs: "/images/nodejs-new-pantone-black.png"
-      },{
-        angularjs: "/images/angular.png",
-      },{
-        bulma: "/images/bulma-logo.png"
-      }];
+      vm.images = ["../images/nodejs-new-pantone-black.png", "../images/angular.png","../images/bulma-logo.png"];
 
       vm.projects  = [
         {
@@ -41,11 +35,16 @@
           console.log(vm.projects[1].description);
           vm.displayedIndex = false;
           vm.background = 'url(/images/montanaSunset.png)';
+
+          vm.myInterval = 5000;
+          vm.noWrapSlides = false;
+          vm.active = 0;
+          var slides = vm.slides = vm.images;
+          var currIndex = 0;
+
       }
 
-      vm.carousel = function () {
 
-      }
 
     }
 }());
