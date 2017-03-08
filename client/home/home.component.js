@@ -8,7 +8,14 @@
 
     function homeCtrl() {
       const vm = this;
-      vm.images = []
+      vm.images = [{
+        nodejs: "/images/nodejs-new-pantone-black.png"
+      },{
+        angularjs: "/images/angular.png",
+      },{
+        bulma: "/images/bulma-logo.png"
+      }];
+
       vm.projects  = [
         {
           title: 'GitFit',
@@ -36,6 +43,9 @@
           vm.background = 'url(/images/montanaSunset.png)';
       }
 
+      vm.carousel = function () {
+
+      }
 
     }
 }());
