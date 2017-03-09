@@ -5,10 +5,14 @@
       controller: homeCtrl,
       templateUrl: '/home/home.html'
     })
+    .component("slider", {
+      controller: sliderCtrl,
+      templateUrl: '/home/home.slider.html'
+    })
 
     function homeCtrl() {
       const vm = this;
-      vm.images = ["../images/nodejs-new-pantone-black.png", "../images/angular.png","../images/bulma-logo.png"];
+
 
       vm.projects  = [
         {
@@ -31,20 +35,33 @@
       ];
 
       vm.$onInit = function($index){
-          console.log('main');
-          console.log(vm.projects[1].description);
-          vm.displayedIndex = false;
-          vm.background = 'url(/images/montanaSunset.png)';
+        vm.displayedIndex = false;
+        vm.background = 'url(/images/montanaSunset.png)';
+      }
+    }
 
-          vm.myInterval = 5000;
-          vm.noWrapSlides = false;
-          vm.active = 0;
-          var slides = vm.slides = vm.images;
-          var currIndex = 0;
+    function sliderCtrl($interval) {
+      const vm = this;
+      vm.images = ["/images/nodejs-new-pantone-black.png", "/images/angular.png","/images/bulma-logo.png"];
 
+      vm.$onInit = function(){
+        vm.currentIndex = 0;
+        vm.slideRoll();
       }
 
+      vm.slideRoll = function() {
+        console.log(vm.currentIndex);
 
-
+        $interval(function() {
+          vm.currentIndex = 0;
+          vm.currentImage = vm.images[vm.currentIndex];
+          if(vm.currentImage === vm.images[vm.images.length]) {
+            vm.currentIndex = 0;
+          }
+          vm.currentIndex++;
+          console.log('animate slide');
+        }, 2500);
+      }
     }
+
 }());

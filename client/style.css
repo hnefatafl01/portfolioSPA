@@ -27,7 +27,7 @@ span {
   margin-bottom: 5vh;
   margin-top:5vh;
   opacity: .6;
-
+  background-color: green;
 }
 
 
@@ -52,9 +52,11 @@ span {
 
 #projects {
   z-index: 1;
+  background-color: green;
 }
 
 .tab {
+  background-color: yellow;
   border-top: 1px solid #3390df;
   border-right: 1px solid #3390df;
   border-left: 1px solid #3390df;
@@ -72,6 +74,7 @@ span {
 }
 
 .box {
+  background-color: purple;
   color: #FFFFFF;
   height: 30vh;
   width:100vw;
@@ -81,6 +84,8 @@ span {
   margin-left: -15px;
   opacity: 0.6;
 }
-#tech {
-  height: 20vh;
+#slideshow {
+  background-color: red;
+  height: 30vh;
+  width: 40vw;
 }

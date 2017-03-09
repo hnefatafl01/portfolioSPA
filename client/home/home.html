@@ -1,6 +1,6 @@
 
 <div class="container container-fluid">
-  <div id="bio" class="row container">
+  <div id="bio" class="row container d-flex">
     <div id="portrait" class="box default-primary-color col col-4">
       <img src="http://placehold.it/200x300" alt="portrait">
       <h4></h4>
@@ -50,19 +50,9 @@
           <img ng-src="{{project.image}}">
           <p>{{project.description}}</p>
         </div>
-
-
       </div>
 
-      <div id="tech" class="row container">
-        <div class="box default-primary-color col-12">
-          <h2>Tech Used</h2>
-          <div class="container flex-wrap" ng-repeat="imageUrl in $ctrl.images">
-            <img ng-src="{{imageUrl}}" alt="tech logo">
-          </div>
-
-        </div>
-      </div>
+      <slider></slider>
 
     </div>
 
