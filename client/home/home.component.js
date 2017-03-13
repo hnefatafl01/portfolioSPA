@@ -67,7 +67,7 @@
           }
           vm.currentIndex++;
           console.log('animate slide');
-        }, 2500);
+        }, 3000);
       }
     }
 
