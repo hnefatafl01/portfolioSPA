@@ -13,7 +13,6 @@
     function homeCtrl() {
       const vm = this;
 
-
       vm.projects  = [
         {
           title: 'GitFit',

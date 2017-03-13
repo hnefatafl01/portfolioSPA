@@ -11,18 +11,27 @@ span {
 
 }
 
+header {
+  position: fixed!important;
+  width: 100vw;
+}
+
 .banner-image {
-  height: 50vh;
+  /*height: 50vh;*/
+  height: 120vh;
   width: 100vw;
   z-index: -1;
   background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
+  /*background-position: center;*/
+
+  /*position: absolute;*/
   /*background-attachment: fixed;*/
+  background-attachment:fixed!important;
+  overflow:hidden;
 }
 
 .divider {
-  margin-top: 50vh;
+  /*margin-top: 50vh;*/
   width: 100vw;
   height:8vh;
 }
@@ -53,8 +62,12 @@ span {
 
 /*skills section*/
 
-#skills {
+#slide {
+  margin-top: 100px;
+}
 
+#slide > img {
+  align: middle;
 }
 
 #slideshow {
@@ -101,4 +114,13 @@ span {
   border-color: #202020;
   color: #2A2A2A;
   box-shadow: inset 0 0 5px #000000;
+}
+
+.bar {
+  background-color: #2A2A2A;
+  height: 60px;
+  margin: -20px;
+  align-items: center;
+  color: #797A79;
+  padding:15px;
 }
