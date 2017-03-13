@@ -21,71 +21,84 @@ span {
   /*background-attachment: fixed;*/
 }
 
-#bio {
-  width: 100vw;
-  height: 50vh;
-  margin-bottom: 5vh;
-  margin-top:5vh;
-  opacity: .6;
-  background-color: green;
-}
-
-
-#portrait {
-  /*margin-right: 3vw;*/
-}
-
-#about {
-  margin-top: 10px;
-  height: 50vh;
-  width: 110vw;
-  color: #FFFFFF;
-}
-
-
-
 .divider {
   margin-top: 50vh;
   width: 100vw;
   height:8vh;
 }
 
-#projects {
-  z-index: 1;
-  background-color: green;
+/*profile section*/
+
+#bio {
+  margin-top: 20px;
 }
 
-.tab {
-  background-color: yellow;
-  border-top: 1px solid #3390df;
-  border-right: 1px solid #3390df;
-  border-left: 1px solid #3390df;
-  margin-top: 10px;
-  margin-bottom: -10px;
-  width: 47vw;
-  height: 40px;
-  color: #3390df;
-  padding: .5em;
+#profile {
+  background-color: #FFFFFF;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
 }
 
-.tab:hover {
-  background-color: #3390df;
-  color: #2a2a2a;
+#portrait {
+  margin: 10px;
 }
 
-.box {
-  background-color: purple;
-  color: #FFFFFF;
-  height: 30vh;
-  width:100vw;
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: -10px;
-  margin-left: -15px;
-  opacity: 0.6;
+#about {
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  background-color: #FFFFFF;
 }
+
+/*skills section*/
+
+#skills {
+
+}
+
 #slideshow {
-  background-color: red;
-  height: 30vh;
+  background-color: #FFFFFF;
+  color: #212121;
+  height: 40vh;
   width: 40vw;
+  margin: 10px;
+  padding:20px;
+}
+
+#portfolio {
+  background-color: #FFFFFF;
+  color: #212121;;
+  margin: 10px;
+  padding: 20px;
+}
+
+#projectNav {
+  height: 60px;
+  margin: -20px;
+  align-items: center;
+}
+
+#projectTabs {
+  border-radius: none;
+}
+
+#projectDetails {
+  margin-top: 30px;
+  background-color: #FFFFFF;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  background-color: #2A2A2A;
+  border-radius: 0px;
+  border: 0px;
+  color: #797A79;
+}
+
+.btn-secondary:hover {
+  background-color: #797A79;
+  border-radius: 0px;
+  border-color: #202020;
+  color: #2A2A2A;
+  box-shadow: inset 0 0 5px #000000;
 }

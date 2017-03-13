@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="light-primary-color">
-    <header class="dark-primary-color ">
+    <header class="dark-primary-color">
       <nav class="row navbar navbar-toggleable-md">
         <div class="container justify-content-around">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +37,13 @@
         </div>
       </nav>
     </header>
-    <section class="banner-image" ng-style="{'background-image':'url(/images/montanaSunset.png)'}"></section>
-    <section class="divider dark-primary-color"></section>
-    <ui-view><home></home></ui-view>
+    <div class="banner-image" ng-style="{'background-image':'url(/images/montanaSunset.png)'}"></div>
+    <div class="divider dark-primary-color"></div>
+    <ui-view>
+      <home></home>
+    </ui-view>
 
-    <!-- <a href="http://www.freepik.com/free-photos-vectors/abstract">Abstract image created by Kjpargeter - Freepik.com</a> -->
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> -->
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>

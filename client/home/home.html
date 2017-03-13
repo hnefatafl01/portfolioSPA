@@ -1,60 +1,77 @@
 
-<div class="container container-fluid">
-  <div id="bio" class="row container d-flex">
-    <div id="portrait" class="box default-primary-color col col-4">
-      <img src="http://placehold.it/200x300" alt="portrait">
-      <h4></h4>
-      <h4><i class="fa fa-envelope-square" aria-hidden="true">hnefatafl01@gmail.com</i></h4>
+<main class="container">
+
+  <section id="bio" class="row">
+    <figcaption id="profile" class="col-4">
+      <img id="portrait" src="http://placehold.it/200x200" alt="portrait">
+      <h4><i class="fa fa-envelope-square" aria-hidden="true"></i> hnefatafl01@gmail.com</h4>
+    </figcaption>
+
+    <div id="about" class="col">
+      <h2>About</h2>
+      <p> Master cleanse succulents cardigan DIY viral. Before they sold out
+          slow-carb heirloom chicharrones. Health goth migas vexillologist
+          four loko everyday carry, thundercats four dollar toast food truck
+          umami knausgaard jean shorts small batch cliche slow-carb.
+          Viral skateboard thundercats schlitz, iPhone fam 3 wolf moon hoodie.
+          Etsy man bun before they sold out you probably haven't heard of
+          them gentrify fap locavore. Activated charcoal sustainable vape
+          pitchfork, mumblecore schlitz pickled vinyl taxidermy DIY.
+          Flexitarian occupy kitsch migas, food truck normcore direct
+          trade kale chips messenger bag disrupt.
+      </p>
     </div>
-    <div class="col col-8">
-      <div id="about" class="row container justify-content-center">
-        <div class="default-primary-color col">
-          <h2>About</h2>
-          <p> Master cleanse succulents cardigan DIY viral. Before they sold out
-              slow-carb heirloom chicharrones. Health goth migas vexillologist
-              four loko everyday carry, thundercats four dollar toast food truck
-              umami knausgaard jean shorts small batch cliche slow-carb.
-              Viral skateboard thundercats schlitz, iPhone fam 3 wolf moon hoodie.
-              Etsy man bun before they sold out you probably haven't heard of
-              them gentrify fap locavore. Activated charcoal sustainable vape
-              pitchfork, mumblecore schlitz pickled vinyl taxidermy DIY.
-              Flexitarian occupy kitsch migas, food truck normcore direct
-              trade kale chips messenger bag disrupt.</p>
-        </div>
+  </section>
+
+  <section id="skills" class="row">
+    <section id="slideshow" class="col-4">
+      <h2>Tech Used</h2>
+      <div id="slide" class="container">
+        <img ng-src="{{$ctrl.currentImage}}" alt="tech logo">
       </div>
-    </div>
-  </div>
+    </section>
 
-    <div  id="projects"  class="col col-12 justify-content-center">
-      <div class="container justify-content-center"
-           ng-repeat="project in $ctrl.projects">
-        <div class="tab row container dark-primary-color justify-content-space-between"
-             ng-click="$ctrl.displayedIndex = $index">
-             <div class="col-6">
-                <h4>{{project.title}}</h4>
-             </div>
-             <div class="col">
-              <h5><span>{{project.version}}</span></h5>
-             </div>
-             <div class="col">
-              <h5><span>{{project.date}}</span></h5>
-             </div>
-             <div class="col-1">
-              <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
-             </div>
-          <!-- <i href="{{}}" class="fa fa-github" aria-hidden="true"></i> -->
+    <div  id="portfolio" class="col">
+      <nav id="projectNav"class="row container-fluid default-primary-color" >
+        <div ng-repeat="project in $ctrl.projects">
+          <button type="button"
+                  class="btn btn-lg btn-block btn-secondary"
+                  id="projectTabs"
+                  ng-click="$ctrl.displayedIndex = $index">
+                  {{project.title}}
+          </button>
         </div>
-
-        <div class="box default-primary-color col"
-             ng-if="$ctrl.displayedIndex === $index">
-          <img ng-src="{{project.image}}">
-          <p>{{project.description}}</p>
-        </div>
-      </div>
-
-      <slider></slider>
-
+      </nav>
+      <article id="projectDetails"
+               class="default-primary-color"
+               ng-repeat="project in $ctrl.projects track by $index"
+               ng-if="$ctrl.displayedIndex === $index">
+        <h5>{{project.title}} <span>{{project.version}} {{project.date}}</span></h5>
+        <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
+        <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
+        <p>{{project.description}}</p>
+      </article>
     </div>
+  </section>
 
+</main>
+
+<!-- <section
+
+  class="row dark-primary-color"
+  ng-repeat="project in $ctrl.projects"
+  ng-click="$ctrl.displayedIndex = $index"> -->
+
+    <!-- <div class="col-6">
+      <h4>{{project.title}}</h4>
     </div>
-  </div>
+    <div class="col">
+      <h5><span>{{project.version}}</span></h5>
+    </div>
+    <div class="col">
+      <h5><span>{{project.date}}</span></h5>
+    </div>
+    <div class="col-1">
+      <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+    </div> -->
+<!-- </section> -->
