@@ -17,7 +17,7 @@ header {
 }
 
 .banner-image {
-  /*height: 50vh;*/
+  height: 65vh;
   height: 120vh;
   width: 100vw;
   z-index: -1;
