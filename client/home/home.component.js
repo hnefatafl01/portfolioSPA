@@ -21,7 +21,7 @@
           techImgs: '',
           date: 'March 2017',
           deployed: null,
-          github: 'https://github.com/Techne'
+          github: 'https://github.com/hnefatafl01/Techne'
         },
         {
           title: 'Pandora\'\s Box',
