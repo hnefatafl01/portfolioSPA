@@ -1,0 +1,51 @@
+
+<main class="container">
+  <div id="top" class="container">
+    <section class="row  justify-content-center">
+        <div id="portrait" class="col text-center align-self-center">
+          <img ng-src="images/kevin-rufus-lake.jpg" alt="portrait">
+        </div>
+
+        <div id="about" class="col align-self-center justify-content-end">
+          <div>
+            <h4>About Me</h4>
+            <h6>Former fitness pro turned developer</h6>
+            <p> I am on a journey to sharpen mind body and spirit. JavaScript development I have learned to implement Node.js, Express, Angularjs and PostgreSQL in full stack apps. Coding reminds me of when I was a kid and spilled my whole box of legos on the floor and got lost in building for hours on end freestyling...I'm still a LEGO-maniac.</p>
+          </div>
+        </div>
+    </section>
+  </div>
+
+    <div  id="portfolio" class="row justify-content-center">
+      <!-- <nav id="projectNav"class="row container-fluid default-primary-color" > -->
+        <!-- <div ng-repeat="project in $ctrl.projects"> -->
+          <!-- <button type="button"
+                  class="btn btn-lg btn-block btn-secondary"
+                  id="projectTabs"
+                  ng-click="$ctrl.displayedIndex = $index">
+                  {{project.title}}
+          </button> -->
+        <!-- </div> -->
+      <!-- </nav> -->
+      <div class="box col align-self-center"
+           ng-repeat="project in $ctrl.projects"
+           ng-click="$ctrl.displayedIndex = $index">
+        <div class="col">
+          <h4>{{project.title}}</h4>
+          <img ng-src="images/{{project.thumbnail}}" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <article id="projectDetails"
+             class="container"
+             ng-repeat="project in $ctrl.projects track by $index"
+             ng-if="$ctrl.displayedIndex === $index">
+      <h5>{{project.title}} <span>{{project.version}} {{project.date}}</span></h5>
+      <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
+      <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
+      <p>{{project.description}}</p>
+    </article>
+
+</main>
