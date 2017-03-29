@@ -71,10 +71,12 @@ main {
   width: 100vw;
   padding: 10px;
   height: 32vh;
+  margin-right: 10px;
 }
 
 #about {
   margin: 10px;
+  margin-left: 20px
   padding: 10px;
   height: 32vh;
   background-color: #E2E2E2;
