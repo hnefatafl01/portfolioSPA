@@ -2,17 +2,6 @@ body {
   z-index: -1;
 }
 
-#portrait {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /*border-radius: 50%;*/
-  /*height: 32vh;*/
-}
-
-#top {
-  background-color: #FFFFFF;
-}
-
 span {
   font-size: .25em;
 }
@@ -66,6 +55,11 @@ main {
   width: 100vw;
 }
 
+#top {
+  background-color: #FFFFFF;
+  margin-top: 10px;
+}
+
 #portrait {
   background-color: #E2E2E2;
   width: 100vw;
@@ -79,13 +73,25 @@ main {
   margin: 10px;
   margin-left: 20px
   padding: 10px;
+  padding-top: 20px;
   height: 32vh;
   background-color: #E2E2E2;
   color: #00293c;
 }
 
+#projectHeader {
+  background-color: #1e656d;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: .5em;
+  text-align: center;
+  color: #f1f3c3;
+}
+
 .box {
   height: 32vh;
+  min-height: 32vh;
   width: auto;
   margin-top:20px;
   margin-bottom:20px;
@@ -104,4 +110,5 @@ main {
 #projectDetails {
   width: 100vw;
   height: 32vh;
+  color: #00293c;
 }
