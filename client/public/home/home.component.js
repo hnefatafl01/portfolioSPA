@@ -9,6 +9,11 @@
       controller: sliderCtrl,
       templateUrl: '/home/home.slider.html'
     })
+    .component("modal", {
+      controller: modalCtrl,
+      templateUrl: '/home/home.modal.html'
+    })
+
 
     function homeCtrl() {
       const vm = this;
@@ -52,7 +57,8 @@
           thumbnail: 'gitfit.png',
           date: 'November 2016',
           deployed: 'https://gitfit-8d961.firebaseapp.com/',
-          github: 'https://github.com/hnefatafl01/GitFit/tree/master/client'
+          github: 'https://github.com/hnefatafl01/GitFit/tree/master/client',
+          youTube: ''
         }
       ];
 
@@ -83,6 +89,16 @@
           console.log('animate slide');
         }, 3000);
       }
+    }
+
+    function modalCtrl(){
+      const vm = this;
+      vm.modalShown = false;
+      console.log('hi');
+      vm.toggleModal = function() {
+        console.log('clicked');
+        vm.modalShown = !vm.modalShown;
+      };
     }
 
 }());

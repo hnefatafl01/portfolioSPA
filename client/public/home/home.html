@@ -52,8 +52,9 @@
         <h5>{{project.title}} <span>{{project.version}} {{project.date}}</span></h5>
         <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
         <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
         <p>{{project.description}}</p>
       </article>
     </div>
-
+  <modal></modal>
 </main>
