@@ -50,9 +50,18 @@
                ng-repeat="project in $ctrl.projects track by $index"
                ng-if="$ctrl.displayedIndex === $index">
         <h5>{{project.title}} <span>{{project.version}} {{project.date}}</span></h5>
-        <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
-        <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
-        <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        <div class="row container justify-content-between">
+          <div class="col-2">
+            <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
+            <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          </div>
+            <div class="col">
+              <ul class="d-flex align-items-center">
+                <li ng-repeat="img in project.techImgs track by $index"><img class="" id="techImgs" ng-src="images/{{img}}" alt="tech"></li>
+              </ul>
+            </div>
+        </div>
         <p>{{project.description}}</p>
       </article>
     </div>
