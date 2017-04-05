@@ -24,16 +24,6 @@
 
   <div class="container">
       <div  id="portfolio" class="row justify-content-center">
-      <!-- <nav id="projectNav"class="row container-fluid default-primary-color" > -->
-        <!-- <div ng-repeat="project in $ctrl.projects"> -->
-          <!-- <button type="button"
-                  class="btn btn-lg btn-block btn-secondary"
-                  id="projectTabs"
-                  ng-click="$ctrl.displayedIndex = $index">
-                  {{project.title}}
-          </button> -->
-        <!-- </div> -->
-      <!-- </nav> -->
         <div class="box col align-self-center"
              ng-repeat="project in $ctrl.projects"
              ng-click="$ctrl.displayedIndex = $index">
@@ -54,7 +44,7 @@
           <div class="col-2">
             <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
             <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
-            <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            <!-- <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a> -->
           </div>
             <div class="col">
               <ul class="d-flex align-items-center">
