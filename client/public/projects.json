@@ -4,7 +4,7 @@
     "version": "0.8.0",
     "description": "A comprehensive goal setting and fitness tracking application with graphic visualization using nvd3",
     "thumbnail": "techne.png",
-    "techImgs": ["ionic.jpeg", "angular.png","node-express.jpeg", "knex.png", "bookshelf.png","psql.png"],
+    "techImgs": ["ionic.jpeg", "angular.png","js-logo.png", "node.png","express.png", "knex.png", "bookshelfjs.png","psql.png"],
     "date": "March 2017",
     "deployed": "null",
     "github": "https://github.com/hnefatafl01/Techne"
@@ -14,7 +14,7 @@
     "version": "1.0.0",
     "description": "Pandora's Box is a mobile app and Internet of Things project designed to streamline and gamify interactions with parents and children on the subject of chores or tasks. It sets up a system where there is a tangible reward controlled by the mobile application.",
     "thumbnail": "pandora.png",
-    "techImgs": ["ionic.jpeg", "angular.png","node.png", "knex.png", "psql.png"],
+    "techImgs": ["ionic.jpeg","raspberry-pi.png", "angular.png","node.png","express.png", "knex.png", "psql.png"],
     "date": "February 2017",
     "deployed": "null",
     "github": "https://github.com/pandoras-box"
@@ -24,7 +24,7 @@
     "version": "1.0.0",
     "description": "A gamified scavenger hunt using google places API.",
     "thumbnail": "uxplor.png",
-    "techImgs": ["jquery-logo.jpg","node.png", "knex.png", "psql.png"],
+    "techImgs": ["google-places.png","jquery-logo.jpg","node.png","express.png","knex.png","psql.png"],
     "date": "January 2017",
     "deployed": "https://uxplor-7ce2a.firebaseapp.com/",
     "github": "['https://github.com/TN5/uxplor-Client-side','https://github.com/TN5/uxplor-Server-side']"
@@ -33,7 +33,7 @@
     "title": "GitFit",
     "version": "1.0.0",
     "description": "A simple mobile-first app for tracking workout data and picking exercises based on muscle group. Designed to provide a fast and easy tool for Fitness Pros and Exercise Enthusiasts to plan and track training variables for their workouts.",
-    "techImgs": ["bulma-logo.png","jquery-logo.jpg","javascript-logo.png", "css-logo.png", "html-logo.png"],
+    "techImgs": ["bulma-logo.png","ajax.jpeg","jquery-logo.jpg","javascript-logo.png", "css-logo.png", "html-logo.png"],
     "thumbnail": "gitfit.png",
     "date": "November 2016",
     "deployed": "https://gitfit-8d961.firebaseapp.com/",
