@@ -4,7 +4,7 @@
     "version": "0.8.0",
     "description": "A comprehensive goal setting and fitness tracking application with graphic visualization using nvd3",
     "thumbnail": "techne.png",
-    "techImgs": ["ionic.jpeg", "angular.png","js-logo.png", "node.png","express.png", "knex.png", "bookshelfjs.png","psql.png"],
+    "techImgs": ["ionic.jpeg","nvd3.png","angular.png","js-logo.png", "node.png","express.png", "knex.png", "bookshelfjs.png","psql.png"],
     "date": "March 2017",
     "deployed": "null",
     "github": "https://github.com/hnefatafl01/Techne"
