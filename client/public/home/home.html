@@ -1,7 +1,7 @@
 
 <main layout="row">
-  <div flex="20"></div>
-  <div id="mainDiv" flex="60"  class="md-padding">
+  <div flex="15"></div>
+  <div id="mainDiv" flex="70"  class="md-padding">
     <section layout="row">
       <div flex="20"></div>
       <div flex="60">
@@ -38,38 +38,32 @@
       <div flex="20"></div>
     </section>
 
-
-  <!-- <md-card-header>
-    <md-card-header-text>
-      <span class="md-title">Kevin Erickson</span>
-      <span class="md-subhead">Fitness pro turned developer</span>
-    </md-card-header-text>
-  </md-card-header> -->
-
-    <md-content layout="row" layout-align="space-between" layout-wrap >
-      <!-- <div layout="column" flex="22"></div> -->
+    <md-content layout="row" layout-align="space-between center" ><!-- layout-wrap -->
       <md-toolbar layout="row" layout-align="space-around center">
         <h2>Projects</h2>
       </md-toolbar>
 
-      <md-card ng-repeat="project in $ctrl.projects" ng-click="$ctrl.displayedIndex = $index">
-        <img src="http://placehold.it/250x250" class="md-card-image" alt="image caption"><!-- ng-src="images/{{project.thumbnail}}"-->
-        <md-card-content>
-          <h2>{{project.title}}</h2>
-          <p></p>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="space-around center">
-          <md-button>Github</md-button>
-          <md-button>Live Site</md-button>
-        </md-card-actions>
-      </md-card>
+      <!-- <div class="md-card-wrapper" > -->
+        <md-card ng-repeat="project in $ctrl.projects" ng-click="$ctrl.displayedIndex = $index">
+          <img id="thumbnail" src="http://placehold.it/300x300" class="md-card-image" alt="image caption"><!-- ng-src="images/{{project.thumbnail}}"-->
+          <md-card-content>
+            <h2>{{project.title}}</h2>
+          </md-card-content>
+          <md-card-actions layout="row" layout-align="space-around center">
+            <md-button>Github</md-button>
+            <md-button>Live Site</md-button>
+          </md-card-actions>
+        </md-card>
+      <!-- </div> -->
 
+    </md-content>
+
+    <md-content>
       <md-card ng-repeat="project in $ctrl.projects track by $index"
                ng-if="$ctrl.displayedIndex === $index">
        <!-- <img ng-src="images/{{project.thumbnail}}" class="md-card-image" alt="image caption"> -->
         <md-card-content>
           <h2>{{project.title}} <span>{{project.version}} {{project.date}}</span></h2>
-          <p></p>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
           <md-button ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
@@ -86,8 +80,7 @@
         </ul>
       </md-card>
     </md-content>
-
   </div>
-  <div flex=""></div>
+  <div flex="15"></div>
   <modal></modal>
 </main>

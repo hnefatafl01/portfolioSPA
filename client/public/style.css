@@ -58,3 +58,15 @@ md-user-avatar>img {
   height: 15vh;
   margin-bottom: -10vh;
 }
+
+/*.md-card-wrapper {
+  position: relative;
+    width: 40%;
+  span {
+      position: absolute;
+      top: 20%;
+      right: 20%;
+      color: green;
+      font-size: 34px;
+    }
+}*/
