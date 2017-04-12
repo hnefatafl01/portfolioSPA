@@ -38,9 +38,9 @@
       <div flex="20"></div>
     </section>
 
-    <md-content layout="row" layout-align="space-between center" layout-wrap><!--  -->
+    <md-content id="projects" layout="row" layout-align="space-between center" layout-wrap><!--  -->
       <md-toolbar layout="row" layout-align="start">
-        <h2>Projects</h2>
+        <h2 id="project-header">Projects</h2>
       </md-toolbar>
 
       <!-- <div class="md-card-wrapper" > -->
@@ -58,8 +58,9 @@
 
     </md-content>
 
-    <md-content>
-      <md-card ng-repeat="project in $ctrl.projects track by $index"
+    <md-content id="project-details" >
+      <md-card
+               ng-repeat="project in $ctrl.projects track by $index"
                ng-if="$ctrl.displayedIndex === $index"
                layout="row">
 

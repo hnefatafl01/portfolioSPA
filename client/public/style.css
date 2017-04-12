@@ -24,12 +24,6 @@ main {
   background-color: #FFFFFF;
 }
 
-#projectDetails {
-  width: 100vw;
-  height: 32vh;
-  color: #00293c;
-}
-
 #techImgs {
   margin-left: 1em;
   margin-right: 1em;
@@ -51,7 +45,7 @@ main {
 }
 
 #projects {
-  opacity: 90%;
+  background-color: rgba(255,255,255,.8);
 }
 
 md-user-avatar>img {
@@ -78,6 +72,16 @@ md-user-avatar>img {
   text-align: center;
 }
 
-.md-toolbar > h2 {
-  margin-left: 10em;
+#project-details {
+  background-color: rgba(255,255,255,.8);
+  /*position: relative;
+  z-index: 10000;*/
 }
+
+#project-header {
+  margin-left: .4em;
+}
+
+/*.md-toolbar > h2 {
+  margin-left: 10em;
+}*/
