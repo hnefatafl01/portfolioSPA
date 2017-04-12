@@ -1,59 +1,93 @@
 
-<main class="container">
-  <div id="top" class="container">
-    <section class="row  justify-content-center">
-        <div id="portrait" class="col text-center align-self-center">
-          <img ng-src="images/kevin-rufus-lake.jpg" alt="portrait">
-        </div>
-
-        <div id="about" class="col align-self-center justify-content-end">
-          <div>
-            <h4>About Me</h4>
-            <h6>Former fitness pro turned developer</h6>
+<main layout="row">
+  <div flex="20"></div>
+  <div id="mainDiv" flex="60"  class="md-padding">
+    <section layout="row">
+      <div flex="20"></div>
+      <div flex="60">
+        <md-card id="about">
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Kevin Erickson</span>
+              <span class="md-subhead">Fitness pro turned developer</span>
+            </md-card-title-text>
+            <md-card-avatar>
+              <md-user-avatar>
+                <img class="md-user-avatar" src="images/Kevin-Erickson.jpg">
+              </md-user-avatar>
+            </md-card-avatar>
+          </md-card-title>
+          <md-card-actions layout="row" layout-align="start center">
+            <md-button aria-label="github link" ng-href="https://github.com/hnefatafl01">
+              <ng-md-icon icon="github-circle"></ng-md-icon>
+            </md-button>
+            <md-button aria-label="linkedin link" href="https://www.linkedin.com/in/hnefatafl01/">
+              <ng-md-icon icon="linkedin"></ng-md-icon>
+            </md-button>
+            <md-card-icon-actions>
+              <md-button class="md-icon-button" aria-label="icon">
+                <md-icon md-svg-icon="icon"></md-icon>
+              </md-button>
+            </md-card-icon-actions>
+          </md-card-actions>
+          <md-card-content>
             <p> I am on a journey to sharpen mind body and spirit. Through Galvanize I have learned to implement Node.js, Express, Angularjs and PostgreSQL in full stack apps. Coding reminds me of when I was a kid and spilled my whole box of legos on the floor and got lost in building for hours on end...I'm still a LEGO-maniac only with code.</p>
-          </div>
-        </div>
-    </section>
-  </div>
-
-  <div id="projectHeader" class="row justify-content-center">
-    <div class="col">
-      <h2>Projects</h3>
-    </div>
-  </div>
-
-  <div class="container">
-      <div  id="portfolio" class="row justify-content-center">
-        <div class="box col align-self-center"
-             ng-repeat="project in $ctrl.projects"
-             ng-click="$ctrl.displayedIndex = $index">
-          <div class="col">
-            <h4>{{project.title}}</h4>
-            <img ng-src="images/{{project.thumbnail}}" alt="">
-          </div>
-
-        </div>
+          </md-card-content>
+      </md-card>
       </div>
+      <div flex="20"></div>
+    </section>
 
-      <article id="projectDetails"
-               class="container"
-               ng-repeat="project in $ctrl.projects track by $index"
+
+  <!-- <md-card-header>
+    <md-card-header-text>
+      <span class="md-title">Kevin Erickson</span>
+      <span class="md-subhead">Fitness pro turned developer</span>
+    </md-card-header-text>
+  </md-card-header> -->
+
+    <md-content layout="row" layout-align="space-between" layout-wrap >
+      <!-- <div layout="column" flex="22"></div> -->
+      <md-toolbar layout="row" layout-align="space-around center">
+        <h2>Projects</h2>
+      </md-toolbar>
+
+      <md-card ng-repeat="project in $ctrl.projects" ng-click="$ctrl.displayedIndex = $index">
+        <img src="http://placehold.it/250x250" class="md-card-image" alt="image caption"><!-- ng-src="images/{{project.thumbnail}}"-->
+        <md-card-content>
+          <h2>{{project.title}}</h2>
+          <p></p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="space-around center">
+          <md-button>Github</md-button>
+          <md-button>Live Site</md-button>
+        </md-card-actions>
+      </md-card>
+
+      <md-card ng-repeat="project in $ctrl.projects track by $index"
                ng-if="$ctrl.displayedIndex === $index">
-        <h5>{{project.title}} <span>{{project.version}} {{project.date}}</span></h5>
-        <div class="row container justify-content-between">
-          <div class="col-2">
-            <a ng-href="{{project.deployed}}"><i  class="fa fa-external-link-square" aria-hidden="true"></i></a>
-            <a ng-href="{{project.github}}"><i  class="fa fa-github-square" aria-hidden="true"></i></a>
-            <!-- <a ng-click="$ctrl.toggleModal()" ng-href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a> -->
-          </div>
-            <div class="col">
-              <ul class="d-flex align-items-center">
-                <li ng-repeat="img in project.techImgs track by $index"><img class="" id="techImgs" ng-src="images/{{img}}" alt="tech"></li>
-              </ul>
-            </div>
-        </div>
-        <p>{{project.description}}</p>
-      </article>
-    </div>
+       <!-- <img ng-src="images/{{project.thumbnail}}" class="md-card-image" alt="image caption"> -->
+        <md-card-content>
+          <h2>{{project.title}} <span>{{project.version}} {{project.date}}</span></h2>
+          <p></p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
+          <md-button ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-button>
+        </md-card-actions>
+        <md-card-content>
+          <p>{{project.description}}</p>
+        </md-card-content>
+
+        <ul layout="row" layout-wrap>
+          <li ng-repeat="img in project.techImgs track by $index">
+            <img class="" id="techImgs" ng-src="images/{{img}}" alt="tech">
+          </li>
+        </ul>
+      </md-card>
+    </md-content>
+
+  </div>
+  <div flex=""></div>
   <modal></modal>
 </main>

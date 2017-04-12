@@ -3,41 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Kevin Erickson</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="palette.css">
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
+    <!-- <link rel="stylesheet" href="palette.css"> -->
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="">
-    <header class="navy">
-      <nav class="row navbar navbar-toggleable-md">
-        <div class="container justify-content-around">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="col-6">
-            <a class="navbar-brand apple-text" ui-sref="home">Kevin Erickson</a>
-          </div>
+  <body ng-cloak>
+    <!-- <header>
+        <md-toolbar layout="row" layout-align="center">
+          <div flex="20"></div>
+          <div class="md-toolbar-tools">
+            <h2 md-truncate flex>Kevin Erickson Web Development</h2>
 
-          <div class="collapse navbar-collapse col-6 justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/hnefatafl01"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/hnefatafl01/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" ui-sref="home.resume">Resume</a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    </header>
-    <!-- <div class="banner-image" ng-style="{'background-image':'url(/images/glacier.png)'}"></div> -->
-    <!-- <div class="divider dark-primary-color"></div> -->
+          <a class="apple-text" ui-sref="home">Kevin Erickson</a>
+        </md-toolbar>
+        <a ui-sref="home.resume">Resume</a>
+        <div flex="20"></div>
+    </header> -->
+    <img id="banner" ng-src="images/bridgers.jpg" class="md-card-image" alt="image caption">
+    <!-- <section ng-style="{background-image: url('./images/lava-lake-rufus.jpg')}"></section> -->
+    <!-- <img ng-src="./images/lava-lake-rufus.jpg" alt=""> -->
+
     <ui-view>
       <home></home>
     </ui-view>
@@ -46,7 +35,11 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> -->
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/node_modules/angular-aria/angular-aria.min.js"></script>
     <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="/node_modules/angular-material/angular-material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script> -->
 
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
