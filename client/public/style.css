@@ -59,14 +59,21 @@ md-user-avatar>img {
   margin-bottom: -10vh;
 }
 
-/*.md-card-wrapper {
+#card {
   position: relative;
-    width: 40%;
-  span {
-      position: absolute;
-      top: 20%;
-      right: 20%;
-      color: green;
-      font-size: 34px;
-    }
-}*/
+  z-index: 1;
+}
+
+#thumbnail {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+}
+
+#project-title {
+  position: relative;
+  z-index: 3;
+  margin-top: -12em;
+  color: #FFFFFF;
+  text-align: center;
+}
