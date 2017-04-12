@@ -25,9 +25,8 @@ main {
 }
 
 #techImgs {
-  margin-left: 1em;
-  margin-right: 1em;
-  height: 40px;
+  margin: 1.5em;
+  height: 50px;
 }
 
 #banner {
@@ -62,6 +61,9 @@ md-user-avatar>img {
   position: relative;
   z-index: 2;
   width: 300px;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 #project-title {
@@ -82,6 +84,15 @@ md-user-avatar>img {
   margin-left: .4em;
 }
 
+#project-buttons {
+  margin-right: -30em;
+  display: flex;
+}
+
+#project-buttons> md-fab {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
 /*.md-toolbar > h2 {
   margin-left: 10em;
 }*/

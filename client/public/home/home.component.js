@@ -20,6 +20,7 @@
 
       vm.$onInit = function($index){
         vm.displayedIndex = false;
+        vm.show = false;
         vm.background = 'url(/images/montanaSunset.png)';
         projectService.getProjects()
           .then(function(projects){
