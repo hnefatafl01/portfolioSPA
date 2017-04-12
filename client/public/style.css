@@ -55,7 +55,7 @@ main {
 }
 
 md-user-avatar>img {
-  height: 15vh;
+  height: 8em;
   margin-bottom: -10vh;
 }
 
@@ -76,4 +76,8 @@ md-user-avatar>img {
   margin-top: -12em;
   color: #FFFFFF;
   text-align: center;
+}
+
+.md-toolbar > h2 {
+  margin-left: 10em;
 }

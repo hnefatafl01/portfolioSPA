@@ -39,7 +39,7 @@
     </section>
 
     <md-content layout="row" layout-align="space-between center" layout-wrap><!--  -->
-      <md-toolbar layout="row" layout-align="space-around center">
+      <md-toolbar layout="row" layout-align="start">
         <h2>Projects</h2>
       </md-toolbar>
 
@@ -60,16 +60,18 @@
 
     <md-content>
       <md-card ng-repeat="project in $ctrl.projects track by $index"
-               ng-if="$ctrl.displayedIndex === $index">
+               ng-if="$ctrl.displayedIndex === $index"
+               layout="row">
+
        <!-- <img ng-src="images/{{project.thumbnail}}" class="md-card-image" alt="image caption"> -->
-        <md-card-content>
+        <md-card-content layout="column" flex="33">
           <h2>{{project.title}} <span>{{project.version}} {{project.date}}</span></h2>
+          <md-card-actions layout="row" layout-align="start center">
+            <md-button ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
+            <md-button ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-button>
+          </md-card-actions>
         </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
-          <md-button ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-button>
-        </md-card-actions>
-        <md-card-content>
+        <md-card-content layout="column" flex="33">
           <p>{{project.description}}</p>
         </md-card-content>
 
