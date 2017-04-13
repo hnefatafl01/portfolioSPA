@@ -110,6 +110,17 @@ md-user-avatar>img {
 /*.md-toolbar > h2 {
   margin-left: 10em;
 }*/
+
+.flex {
+    box-sizing: border-box;
+  }
+
+.flex              { flex: 1;  }   // === 1 1 0%
+.flex-grow,         { flex: 1 1 100%;  }
+.flex-initial     { flex: 0 1 auto;  }
+.flex-auto        { flex: 1 1 auto;  }
+.flex-none        { flex: 0 0 auto;  }
+
 @media (max-width: 960px) {
   #banner {
     width: 100vw;
