@@ -1,11 +1,9 @@
 
-<main layout="row">
-  <div flex="15"></div>
-  <div id="mainDiv" flex="70"  class="md-padding">
-    <section layout="row">
-      <div flex="20"></div>
-      <div flex="60">
-        <md-card id="about">
+<main layout="row" layout-sm="column">
+  <div id="mainDiv" flex-gt-sm="70" flex-offset-gt-sm="15" class="md-padding">
+    <div layout="row" layout-align="space-around" layout-sm="column"  layout-align-sm="center start">
+
+        <md-card flex-sm="grow" flex-gt-sm="66"  id="about">
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">Kevin Erickson</span>
@@ -29,16 +27,15 @@
             <p> I am on a journey to sharpen mind body and spirit. Through Galvanize I have learned to implement Node.js, Express, Angularjs and PostgreSQL in full stack apps. Coding reminds me of when I was a kid and spilled my whole box of legos on the floor and got lost in building for hours on end...I'm still a LEGO-maniac only with code.</p>
           </md-card-content>
       </md-card>
-      </div>
-      <div flex="20"></div>
-    </section>
+
+    </div>
 <!-- projects -->
     <md-content id="projects" layout="row" layout-align="space-between center" layout-wrap>
       <md-toolbar layout="row" layout-align="start">
         <h2 id="project-header">Projects</h2>
       </md-toolbar>
 <!-- project card -->
-      <md-card id="card" ng-repeat="project in $ctrl.projects">
+      <md-card layout-sm="column" flex-sm="fill" id="card" ng-repeat="project in $ctrl.projects">
         <md-card-content>
           <div layout="row" layout-align="center" flex="33">
             <div layout=column flex>
@@ -67,6 +64,4 @@
     </md-content>
 
   </div>
-  <div flex="15"></div>
-  <modal></modal>
 </main>

@@ -109,3 +109,15 @@ md-user-avatar>img {
 /*.md-toolbar > h2 {
   margin-left: 10em;
 }*/
+@media (max-width: 960px) {
+  #banner {
+    width: 100vw;
+    /*margin-top: 8vh;*/
+    position: relative!important;
+    z-index: 0;
+  }
+  #about{
+    margin-top: 1vh;
+    position:relative;
+  }
+}
