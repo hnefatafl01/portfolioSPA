@@ -24,7 +24,7 @@
     "version": "1.0.0",
     "description": "A gamified scavenger hunt using google places API.",
     "thumbnail": "uxplor.png",
-    "techImgs": ["google-places.png","jquery-logo.jpg","node.png","express.png","knex.png","psql.png"],
+    "techImgs": ["google-places.png","node.png","jquery-logo.jpg","express.png","knex.png","psql.png"],
     "date": "January 2017",
     "deployed": "https://uxplor-7ce2a.firebaseapp.com/",
     "github": "https://github.com/TN5/main-uXplor/blob/master/README.md"
