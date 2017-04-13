@@ -64,6 +64,7 @@ md-user-avatar>img {
   margin-top: -16px;
   margin-left: -16px;
   margin-right: -16px;
+  }
 }
 
 #project-title {
@@ -119,5 +120,10 @@ md-user-avatar>img {
   #about{
     margin-top: 1vh;
     position:relative;
+  }
+
+  #thumbnail {
+    width: 100%;
+    margin: 0;
   }
 }
