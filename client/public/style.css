@@ -84,14 +84,27 @@ md-user-avatar>img {
   margin-left: .4em;
 }
 
+/*#card>.md-card-content {
+  position: relative;
+}*/
+
 #project-buttons {
   margin-right: -30em;
   display: flex;
+  position: sticky;
 }
 
-#project-buttons> md-fab {
+#project-buttons>md-fab {
+  border-radius: 48%;
+  padding: .25em;
   margin-top: 1.5em;
   margin-left: 1.5em;
+  background-color: #FAFAFA;
+}
+
+#project-buttons>md-fab:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
 }
 /*.md-toolbar > h2 {
   margin-left: 10em;
