@@ -90,7 +90,7 @@ md-user-avatar>img {
 }*/
 
 #project-buttons {
-  margin-right: -30em;
+  /*margin-right: -30em;*/
   display: flex;
   position: sticky;
 }
