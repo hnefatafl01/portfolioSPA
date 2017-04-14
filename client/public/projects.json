@@ -44,11 +44,22 @@
     "title": "Hipster Troll",
     "version": "1.0.0",
     "description": "A forum board for the snarky and independent of mind",
-    "techImgs": [ "angular.png","bootstrap.png","node.png","jquery-logo.jpg","express.png","knex.png","psql.png"],
+    "techImgs": [ "angular.png","bootstrap.png","node.png","express.png","knex.png","psql.png"],
     "thumbnail": "hiptroll.png",
-    "date": "February 2016",
+    "date": "February 2017",
     "deployed": "https://hiptroll.herokuapp.com/",
     "github": "https://github.com/hnefatafl01/hiptroll",
+    "youTube": ""
+  },
+  {
+    "title": "Portfolio",
+    "version": "1.0.0",
+    "description": "This Site",
+    "techImgs": [ "angular.png","angular-material.png"],
+    "thumbnail": "portfolio.png",
+    "date": "April 2017",
+    "deployed": "",
+    "github": "https://github.com/hnefatafl01/portfolioSPA/tree/master",
     "youTube": ""
   }
 ]
