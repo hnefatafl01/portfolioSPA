@@ -39,5 +39,16 @@
     "deployed": "https://gitfit-8d961.firebaseapp.com/",
     "github": "https://github.com/hnefatafl01/GitFit/tree/master/client",
     "youTube": ""
+  },
+  {
+    "title": "Hipster Troll",
+    "version": "1.0.0",
+    "description": "A forum board for the snarky and independent of mind",
+    "techImgs": [ "angular.png","bootstrap.png","node.png","jquery-logo.jpg","express.png","knex.png","psql.png"],
+    "thumbnail": "gitfit.png",
+    "date": "February 2016",
+    "deployed": "https://hiptroll.herokuapp.com/",
+    "github": "https://github.com/hnefatafl01/hiptroll",
+    "youTube": ""
   }
 ]
