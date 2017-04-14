@@ -1,0 +1,130 @@
+body {
+  z-index: -1;
+}
+
+span {
+  font-size: .25em;
+}
+
+i {
+  color: #f62a00;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed!important;
+  width: 100%;
+  z-index: 1;
+}
+
+main {
+  background-color: #FFFFFF;
+}
+
+#techImgs {
+  margin: 1.5em;
+  height: 50px;
+}
+
+#banner {
+  width: 100vw;
+  /*margin-top: 8vh;*/
+  position: fixed!important;
+  z-index: 0;
+}
+
+#about{
+  margin-top: 38vh;
+  /*margin-top: 45vh;*/
+  z-index: 99;
+  position:relative;
+}
+
+#projects {
+  background-color: rgba(255,255,255,.8);
+}
+
+md-user-avatar>img {
+  height: 8em;
+  margin-bottom: -10vh;
+}
+
+#card {
+  position: relative;
+  z-index: 1;
+}
+
+#thumbnail {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  }
+}
+
+#project-title {
+  position: relative;
+  z-index: 3;
+  margin-top: -12em;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#project-details {
+  background-color: rgba(255,255,255,.8);
+  /*position: relative;
+  z-index: 10000;*/
+}
+
+#project-header {
+  margin-left: .4em;
+}
+
+/*#card>.md-card-content {
+  position: relative;
+}*/
+
+#project-buttons {
+  /*margin-right: -30em;*/
+  display: flex;
+  position: sticky;
+}
+
+#project-buttons>md-fab {
+  border-radius: 48%;
+  padding: .25em;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  background-color: #FAFAFA;
+}
+
+#project-buttons>md-fab:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+/*.md-toolbar > h2 {
+  margin-left: 10em;
+}*/
+
+@media (max-width: 960px) {
+  #banner {
+    width: 100vw;
+    /*margin-top: 8vh;*/
+    position: relative!important;
+    z-index: 0;
+  }
+  #about{
+    margin-top: 1vh;
+    position:relative;
+  }
+
+  #thumbnail {
+    width: 100%;
+    margin: 0;
+  }
+}
