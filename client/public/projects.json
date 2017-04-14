@@ -55,7 +55,7 @@
     "title": "Portfolio",
     "version": "1.0.0",
     "description": "This Site",
-    "techImgs": [ "angular.png","angular-material.png"],
+    "techImgs": [ "angular.png","angular-material.jpeg"],
     "thumbnail": "portfolio.png",
     "date": "April 2017",
     "deployed": "",
