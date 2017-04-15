@@ -16,12 +16,12 @@
             </md-card-avatar>
           </md-card-title>
           <md-card-actions layout="row" layout-align="start center">
-            <md-fab md-ink-ripple="true" md-ripple-size="auto" aria-label="github link" ng-href="https://github.com/hnefatafl01">
+            <md-button class="md-icon-button" aria-label="github link" ng-href="https://github.com/hnefatafl01">
               <ng-md-icon icon="github-circle"></ng-md-icon>
-            </md-fab>
-            <md-fab  md-ink-ripple="true" md-ripple-size="auto" aria-label="linkedin link" href="https://www.linkedin.com/in/hnefatafl01/">
-              <ng-md-icon icon="linkedin"></ng-md-icon>
-            </md-fab>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="linkedin link" href="https://www.linkedin.com/in/hnefatafl01/">
+              <ng-md-icon  icon="linkedin"></ng-md-icon>
+            </md-button>
           </md-card-actions>
           <md-card-content>
             <p> I am on a journey to sharpen mind body and spirit. Through Galvanize I have learned to implement Node.js, Express, Angularjs and PostgreSQL in full stack apps. Coding reminds me of when I was a kid and spilled my whole box of legos on the floor and got lost in building for hours on end...I'm still a LEGO-maniac only with code.</p>
@@ -41,9 +41,9 @@
             <div layout=column flex>
               <img id="thumbnail" src="images/{{project.thumbnail}}" class="md-card-image" alt="project image">
               <md-card-actions id="project-buttons" layout="row" layout-align="space-around center">
-                <md-fab md-ink-ripple="true" md-ripple-size="auto" ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-fab>
-                <md-fab md-ink-ripple="true" md-ripple-size="auto" ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-fab>
-                <md-fab md-ink-ripple="true" md-ripple-size="auto" ng-click="$ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index"><ng-md-icon icon="keyboard_arrow_up"></ng-md-icon></md-fab>
+                <md-button class="md-icon-button" ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
+                <md-button class="md-icon-button" ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-button>
+                <md-button class="md-icon-button" ng-click="$ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index"><ng-md-icon icon="keyboard_arrow_up"></ng-md-icon></md-button>
               </md-card-actions>
             </div>
 <!-- details -->
