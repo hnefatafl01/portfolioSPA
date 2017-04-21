@@ -98,7 +98,6 @@ md-user-avatar>img {
 }*/
 
 #project-buttons {
-  /*margin-right: -30em;*/
   display: flex;
   position: sticky;
 }
@@ -115,9 +114,6 @@ md-user-avatar>img {
   cursor: pointer;
   background-color: #FFFFFF;
 }
-/*.md-toolbar > h2 {
-  margin-left: 10em;
-}*/
 
 @media (max-width: 960px) {
   #banner {

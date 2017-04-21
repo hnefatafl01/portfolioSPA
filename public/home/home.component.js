@@ -36,31 +36,12 @@
       vm.$onInit = function(){
         vm.currentIndex = 0;
 
-        // vm.slideRoll();
       }
 
-      // vm.slideRoll = function() {
-      //   console.log(vm.currentIndex);
-      //
-      //   $interval(function() {
-      //     vm.currentImage = vm.images[vm.currentIndex];
-      //     if(vm.currentImage === vm.images[vm.images.length]) {
-      //       vm.currentIndex = 0;
-      //     }
-      //     vm.currentIndex++;
-      //     console.log('animate slide');
-      //   }, 3000);
-      // }
+      vm.slider = function() {
+
+      }
     }
 
-    function modalCtrl(){
-      const vm = this;
-      vm.modalShown = false;
-      console.log('hi');
-      vm.toggleModal = function() {
-        console.log('clicked');
-        vm.modalShown = !vm.modalShown;
-      };
-    }
 
 }());
