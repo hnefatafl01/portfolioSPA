@@ -132,3 +132,7 @@ md-user-avatar>img {
     margin: 0;
   }
 }
+
+.animate {
+  background-color: green;
+}

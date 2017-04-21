@@ -29,19 +29,10 @@
       }
     }
 
-    function sliderCtrl($interval) {
-      const vm = this;
-      vm.images = ["/images/nodejs-new-pantone-black.png", "/images/angular.png","/images/bulma-logo.png"];
-
-      vm.$onInit = function(){
-        vm.currentIndex = 0;
-
-      }
-
-      vm.slider = function() {
-
-      }
+    vm.slide = function(index) {
+      index.classlist.toggle('animate')
     }
+
 
 
 }());
