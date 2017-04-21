@@ -62,7 +62,7 @@ md-user-avatar>img {
 
 #card {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 #thumbnail {
@@ -87,7 +87,28 @@ md-user-avatar>img {
   background-color: rgba(255,255,255,.8);
   /*position: relative;
   z-index: 10000;*/
+
 }
+
+#summary {
+  min-width: 20vw;
+  position: sticky;
+}
+
+.details {
+  /*margin-top: -16px;
+  width: 300%;
+  height: auto;
+  background-color: green!important;
+  position: absolute;
+  z-index: 1000!important;*/
+}
+
+/*.grow:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05)!important;
+}*/
 
 #project-header {
   margin-left: .4em;
@@ -131,8 +152,4 @@ md-user-avatar>img {
     width: 100%;
     margin: 0;
   }
-}
-
-.animate {
-  background-color: green;
 }

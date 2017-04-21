@@ -30,7 +30,8 @@
     }
 
     vm.slide = function(index) {
-      index.classlist.toggle('animate')
+      index.classList.toggle('#summary')
+      console.log("toggle");
     }
 
 
