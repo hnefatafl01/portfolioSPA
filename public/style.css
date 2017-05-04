@@ -1,13 +1,5 @@
-body {
-  z-index: -1;
-}
-
 span {
   font-size: .25em;
-}
-
-i {
-  color: #f62a00;
 }
 
 li {
@@ -31,15 +23,12 @@ main {
 
 #banner {
   width: 100vw;
-  /*margin-top: 8vh;*/
-  /*position: fixed!important;*/
   position: relative;
+  margin-bottom: -22vh;
   z-index: 0;
 }
 
-#about{
-  /*margin-top: 38vh;*/
-  margin-top: 0px;
+#about {
   z-index: 99;
   position:relative;
 }
@@ -49,7 +38,7 @@ main {
 }
 
 md-toolbar {
-  margin: 10px;
+  margin: 8px;
   border-radius: 2px;
   box-shadow: 1px 1px 2px #ccc;
 }
@@ -69,39 +58,29 @@ md-user-avatar>img {
   position: relative;
   z-index: 2;
   width: 300px;
-  margin-top: -16px;
-  margin-left: -16px;
-  margin-right: -16px;
-  }
+  margin-top: -16px!important;
+  margin-left: -16px!important;
+  margin-right: -16px!important;
 }
 
 #project-title {
   position: relative;
   z-index: 3;
-  margin-top: -12em;
   color: #FFFFFF;
-  text-align: center;
 }
 
 #project-details {
-  background-color: rgba(255,255,255,.8);
-  /*position: relative;
-  z-index: 10000;*/
-
+  margin-left: 32px;
 }
 
 #summary {
-  min-width: 20vw;
-  position: sticky;
+  min-width: 18vw;
+  max-width: 300px;
+  position: relative;
 }
 
-.details {
-  /*margin-top: -16px;
-  width: 300%;
-  height: auto;
-  background-color: green!important;
-  position: absolute;
-  z-index: 1000!important;*/
+.md-card .activate {
+  position: absolute!important;
 }
 
 /*.grow:hover {
@@ -114,36 +93,23 @@ md-user-avatar>img {
   margin-left: .4em;
 }
 
-/*#card>.md-card-content {
-  position: relative;
-}*/
-
-#project-buttons {
-  display: flex;
-  position: sticky;
-}
-
 #project-buttons>md-fab {
   border-radius: 48%;
-  padding: .25em;
-  margin-top: 1.5em;
-  margin-left: 1.5em;
   background-color: #FAFAFA;
 }
 
-#project-buttons>md-fab:hover {
-  cursor: pointer;
-  background-color: #FFFFFF;
+#footer {
+  margin-top: 8px;
+  height: 14vh;
 }
 
 @media (max-width: 960px) {
   #banner {
     width: 100vw;
-    /*margin-top: 8vh;*/
     position: relative!important;
     z-index: 0;
   }
-  #about{
+  #about {
     margin-top: 1vh;
     position:relative;
   }

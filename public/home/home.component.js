@@ -5,14 +5,14 @@
       controller: homeCtrl,
       templateUrl: '/home/home.html'
     })
-    .component("slider", {
-      controller: sliderCtrl,
-      templateUrl: '/home/home.slider.html'
-    })
-    .component("modal", {
-      controller: modalCtrl,
-      templateUrl: '/home/home.modal.html'
-    })
+    // .component("slider", {
+    //   controller: sliderCtrl,
+    //   templateUrl: '/home/home.slider.html'
+    // })
+    // .component("modal", {
+    //   controller: modalCtrl,
+    //   templateUrl: '/home/home.modal.html'
+    // })
 
 
     function homeCtrl(projectService) {
@@ -27,13 +27,13 @@
             vm.projects = projects;
           })
       }
-    }
 
-    vm.slide = function(index) {
-      index.classList.toggle('#summary')
-      console.log("toggle");
-    }
+      
 
-
+      // vm.slide = function(index) {
+      //   index.classList.toggle('#summary')
+      //   console.log("toggle");
+      // }
+  }
 
 }());

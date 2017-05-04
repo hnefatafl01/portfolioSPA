@@ -1,4 +1,3 @@
-
 <main
       layout="row"
       layout-sm="column">
@@ -43,7 +42,7 @@
 
     </div>
 <!-- projects -->
-    <md-content id="projects" layout="row" layout-align="space-between center" layout-wrap>
+    <md-content id="projects" layout="row" layout-align=" center" layout-wrap>
       <md-toolbar layout="row" layout-align="start">
         <h2 id="project-header">Projects</h2>
       </md-toolbar>
@@ -52,43 +51,46 @@
               layout="column"
               layout-xs="row"
               layout-sm="row"
+              ng-class="{'activate': $ctrl.details}"
               ng-repeat="project in $ctrl.projects">
-        <md-card-content layout-align="center start">
+              <!-- layout-align="center start" -->
+        <md-card-content >
           <div
               layout-gt-sm="row"
-              layout-align="center" flex="33"
+              layout-align="center"
+              flex="33"
               layout-sm="column"
               layout-align-xs="center" layout-align-sm="center">
-            <div id="summary" layout=column layout-align="space-around center" flex>
+            <div id="summary" layout=column flex>
               <img id="thumbnail" src="images/{{project.thumbnail}}" class="md-card-image" alt="project image">
               <md-card-actions id="project-buttons"
                               layout="row"
-                              layout-align="center center">
-
+                              layout-align="space-around center">
                 <md-button class="md-icon-button" ng-href="{{project.github}}"><ng-md-icon icon="github-circle"></md-button>
                 <md-button class="md-icon-button" ng-href="{{project.deployed}}"><ng-md-icon icon="link"></md-button>
-                <md-button
-                          class="md-icon-button"
-                          ng-click="$ctrl.slide(); $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index">
+                <md-button class="md-icon-button"
+                          ng-click="$ctrl.slide(); $ctrl.summary = !$ctrl.details; $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index">
                     <ng-md-icon icon="keyboard_arrow_up"></ng-md-icon>
                 </md-button>
               </md-card-actions>
-              <h2>{{project.title}}</h2>
-              <h6>{{project.version}} {{project.date}}</h6>
+              <div layout="column" layout-align="center center">
+                <h2>{{project.title}}</h2>
+                <h6>{{project.version}} {{project.date}}</h6>
+              </div>
             </div>
 <!-- details -->
             <div
                 layout-gt-sm="row"
                 layout-xs="row"
-                layout-sm="row">
+                layout-sm="row"
+                ng-if="$ctrl.show === true && $ctrl.displayedIndex === $index">
               <md-card-content
+                              id="project-details"
                               class="details"
                               layout="column"
                               flex="100"
                               flex-xs="auto"
-                              flex-sm="auto"
-                              ng-if="$ctrl.show === true && $ctrl.displayedIndex === $index">
-                <!-- <h2>{{project.title}} <span>{{project.version}} {{project.date}}</span></h2> -->
+                              flex-sm="auto">
                 <p>{{project.description}}</p>
                 <ul layout="row" layout-wrap>
                   <li ng-repeat="img in project.techImgs track by $index">
