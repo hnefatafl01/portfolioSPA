@@ -24,7 +24,7 @@ main {
 #banner {
   width: 100vw;
   position: relative;
-  margin-bottom: -22vh;
+  margin-bottom: -48px;
   z-index: 0;
 }
 
@@ -67,6 +67,10 @@ md-user-avatar>img {
   position: relative;
   z-index: 3;
   color: #FFFFFF;
+}
+
+#snippet {
+
 }
 
 #project-details {

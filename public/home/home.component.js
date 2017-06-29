@@ -5,10 +5,6 @@
       controller: homeCtrl,
       templateUrl: '/home/home.html'
     })
-    // .component("slider", {
-    //   controller: sliderCtrl,
-    //   templateUrl: '/home/home.slider.html'
-    // })
     // .component("modal", {
     //   controller: modalCtrl,
     //   templateUrl: '/home/home.modal.html'
@@ -27,13 +23,6 @@
             vm.projects = projects;
           })
       }
-
-      
-
-      // vm.slide = function(index) {
-      //   index.classList.toggle('#summary')
-      //   console.log("toggle");
-      // }
   }
 
 }());

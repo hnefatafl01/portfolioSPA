@@ -3,6 +3,7 @@
     "title": "Techne",
     "version": "0.8.0",
     "description": "A comprehensive goal setting and fitness tracking application with graphic visualization using nvd3",
+    "snippet": "craft goals, see results",
     "thumbnail": "techne.png",
     "techImgs": ["ionic.jpeg","angular.png","js-logo.png", "node.png", "knex.png","psql.png","nvd3.png","express.png" , "bookshelfjs.png"],
     "date": "March 2017",
@@ -13,6 +14,7 @@
     "title": "Pandora's Box",
     "version": "1.0.0",
     "description": "Pandora's Box is a mobile app and Internet of Things project designed to streamline and gamify interactions with parents and children on the subject of chores or tasks. It sets up a system where there is a tangible reward controlled by the mobile application.",
+    "snippet": "gamify chores, give rewards",
     "thumbnail": "pandora.png",
     "techImgs": ["ionic.jpeg","raspberry-pi.png", "angular.png","node.png","express.png", "knex.png", "psql.png"],
     "date": "February 2017",
@@ -22,6 +24,7 @@
   {
     "title": "uXplor",
     "version": "1.0.0",
+    "snippet": "scavenge your city",
     "description": "A gamified scavenger hunt using google places API.",
     "thumbnail": "uxplor.png",
     "techImgs": ["google-places.png","node.png","jquery-logo.jpg","express.png","knex.png","psql.png"],
@@ -32,6 +35,7 @@
   {
     "title": "GitFit",
     "version": "1.0.0",
+    "snippet": "pair exercise with muscle",
     "description": "A simple mobile-first app for tracking workout data and picking exercises based on muscle group. Designed to provide a fast and easy tool for Fitness Pros and Exercise Enthusiasts to plan and track training variables for their workouts.",
     "techImgs": ["bulma-logo.png","ajax.jpeg","jquery-logo.jpg","javascript-logo.png", "css-logo.png", "html-logo.png"],
     "thumbnail": "gitfit.png",
@@ -43,6 +47,7 @@
   {
     "title": "Hipster Troll",
     "version": "1.0.0",
+    "snippet": "get your troll on",
     "description": "A forum board for the snarky and independent of mind",
     "techImgs": [ "angular.png","bootstrap.png","node.png","express.png","knex.png","psql.png"],
     "thumbnail": "hiptroll.png",
@@ -54,7 +59,8 @@
   {
     "title": "Portfolio",
     "version": "1.0.0",
-    "description": "This Site",
+    "snippet": "this code",
+    "description": "Examine the code for the app you're using",
     "techImgs": [ "angular.png","angular-material.jpeg"],
     "thumbnail": "portfolio.png",
     "date": "April 2017",

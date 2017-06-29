@@ -15,7 +15,7 @@
         <md-card id="about"
                 flex-sm="grow"
                 flex-gt-xs="66"
-                flex-gt-sm="66">
+                flex-gt-sm="100">
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">Kevin Erickson</span>
@@ -63,6 +63,11 @@
               layout-align-xs="center" layout-align-sm="center">
             <div id="summary" layout=column flex>
               <img id="thumbnail" src="images/{{project.thumbnail}}" class="md-card-image" alt="project image">
+              <div layout="column" layout-align="center center">
+                <h2>{{project.title}}</h2>
+                <h4 id="snippet">{{project.snippet}}</h4>
+                <!-- <h6>{{project.version}} {{project.date}}</h6> -->
+              </div>
               <md-card-actions id="project-buttons"
                               layout="row"
                               layout-align="space-around center">
@@ -73,10 +78,7 @@
                     <ng-md-icon icon="keyboard_arrow_up"></ng-md-icon>
                 </md-button>
               </md-card-actions>
-              <div layout="column" layout-align="center center">
-                <h2>{{project.title}}</h2>
-                <h6>{{project.version}} {{project.date}}</h6>
-              </div>
+
             </div>
 <!-- details -->
             <div
