@@ -10,19 +10,16 @@
     //   templateUrl: '/home/home.modal.html'
     // })
 
-
     function homeCtrl(projectService) {
       const vm = this;
 
       vm.$onInit = function($index){
         vm.displayedIndex = false;
         vm.show = false;
-        vm.background = 'url(/images/montanaSunset.png)';
         projectService.getProjects()
           .then(function(projects){
             vm.projects = projects;
           })
       }
-  }
-
+    }
 }());
