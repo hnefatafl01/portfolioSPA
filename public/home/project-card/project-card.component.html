@@ -1,0 +1,57 @@
+<md-card 
+    id="card" 
+    class="grow"
+    layout="column"
+    layout-xs="row"
+    layout-sm="row"
+    ng-class="{'activate': $ctrl.details}"
+    ng-repeat="project in $ctrl.projects">
+<!-- layout-align="center start" -->
+    <md-card-content >
+        <div
+            layout-gt-sm="row"
+            layout-align="center"
+            flex="33"
+            layout-sm="column"
+            layout-align-xs="center" layout-align-sm="center">
+            <div 
+                id="summary" 
+                layout=column 
+                flex>
+                <img id="thumbnail" src="images/{{project.thumbnail}}" class="md-card-image" alt="project image">
+                <div layout="column" layout-align="center center">
+                <h2>{{project.title}}</h2>
+                <h4 id="snippet">{{project.snippet}}</h4>
+                <!-- <h6>{{project.version}} {{project.date}}</h6> -->
+            </div>
+            <md-card-actions 
+                id="project-buttons"
+                layout="row"
+                layout-align="space-around center">
+                <md-button class="md-icon-button" ng-href="{{project.github}}"><ng-md-icon icon="github-circle">
+                    <md-tooltip md-direction="top">Code on github</md-tooltip>
+                </md-button>
+                <md-button 
+                    class="md-icon-button" 
+                    ng-href="{{project.deployed}}">
+                    <ng-md-icon icon="link">
+                    <md-tooltip md-direction="top">Live</md-tooltip>
+                </md-button>
+                <md-button 
+                    class="md-icon-button"
+                    ng-click="$ctrl.summary = !$ctrl.details; $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index">
+                    <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_up"></ng-md-icon>
+                    <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_down"></ng-md-icon>
+                    <md-tooltip md-direction="top">Details</md-tooltip>
+                </md-button>
+            </md-card-actions>
+        </div>
+
+<!-- details -->
+            <project-details project="$ctrl.project"></project-details>
+<!-- details -->
+        </div>
+
+        </div>
+    </md-card-content>
+</md-card>
