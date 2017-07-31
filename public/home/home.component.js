@@ -6,13 +6,16 @@
       templateUrl: '/home/home.component.html'
     })
 
-    function homeCtrl() {
+    function homeCtrl(projectService) {
       const vm = this;
 
       vm.$onInit = function() {
         console.log('home loaded');
-        vm.displayedIndex = false;
-        vm.show = false;
+        projectService.getProjects()
+            .then(function(projects){
+                vm.projects = projects;
+                console.log(vm.projects)
+            });
       };
     }
 }());

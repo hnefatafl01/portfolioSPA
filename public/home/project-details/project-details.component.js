@@ -14,6 +14,7 @@
 
         vm.$onInit = function() {
             console.log('project-details');
+            console.log(vm.project);
         };  
     }
 }());

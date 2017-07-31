@@ -5,7 +5,7 @@
     layout-xs="row"
     layout-sm="row"
     ng-class="{'activate': $ctrl.details}"
-    ng-repeat="project in $ctrl.projects">
+    >
 <!-- layout-align="center start" -->
     <md-card-content >
         <div
@@ -18,22 +18,22 @@
                 id="summary" 
                 layout=column 
                 flex>
-                <img id="thumbnail" src="images/{{project.thumbnail}}" class="md-card-image" alt="project image">
+                <img id="thumbnail" src="images/{{$ctrl.data.thumbnail}}" class="md-card-image" alt="project image">
                 <div layout="column" layout-align="center center">
-                <h2>{{project.title}}</h2>
-                <h4 id="snippet">{{project.snippet}}</h4>
-                <!-- <h6>{{project.version}} {{project.date}}</h6> -->
+                <h2>{{$ctrl.data.title}}</h2>
+                <h4 id="snippet">{{$ctrl.data.snippet}}</h4>
+                <!-- <h6>{{$ctrl.data.version}} {{$ctrl.data.date}}</h6> -->
             </div>
             <md-card-actions 
                 id="project-buttons"
                 layout="row"
                 layout-align="space-around center">
-                <md-button class="md-icon-button" ng-href="{{project.github}}"><ng-md-icon icon="github-circle">
+                <md-button class="md-icon-button" ng-href="{{$ctrl.data.github}}"><ng-md-icon icon="github-circle">
                     <md-tooltip md-direction="top">Code on github</md-tooltip>
                 </md-button>
                 <md-button 
                     class="md-icon-button" 
-                    ng-href="{{project.deployed}}">
+                    ng-href="{{$ctrl.data.deployed}}">
                     <ng-md-icon icon="link">
                     <md-tooltip md-direction="top">Live</md-tooltip>
                 </md-button>
@@ -48,7 +48,7 @@
         </div>
 
 <!-- details -->
-            <project-details project="$ctrl.project"></project-details>
+        <project-details project="$ctrl.data"></project-details>
 <!-- details -->
         </div>
 
