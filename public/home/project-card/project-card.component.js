@@ -6,7 +6,8 @@
             controller: projectCtrl,
             templateUrl: '/home/project-card/project-card.component.html',
             bindings: {
-                data: '<'
+                data: '<',
+                index: '<'
             }
         });
       
@@ -18,7 +19,7 @@
             // console.log(vm.data)
             vm.displayedIndex = false;
             vm.show = false;
-            
+            console.log('card index', vm.index);
         };
     }
 

@@ -57,10 +57,10 @@ md-user-avatar>img {
 #thumbnail {
   position: relative;
   z-index: 2;
-  width: 300px;
-  margin-top: -16px!important;
-  margin-left: -16px!important;
-  margin-right: -16px!important;
+   width: 100%;
+   /* margin-top: -16px!important;
+   margin-left: -16px!important;
+  margin-right: -16px!important;    */
 }
 
 #project-title {
@@ -73,7 +73,7 @@ md-user-avatar>img {
 
 }
 
-#project-details {
+/* #project-details {
   margin-left: 32px;
 }
 
@@ -81,7 +81,7 @@ md-user-avatar>img {
   min-width: 18vw;
   max-width: 300px;
   position: relative;
-}
+} */
 
 .md-card .activate {
   position: absolute!important;
@@ -93,9 +93,9 @@ md-user-avatar>img {
   transform: scale(1.05)!important;
 }*/
 
-#project-header {
+ #project-header {
   margin-left: .4em;
-}
+} 
 
 #project-buttons>md-fab {
   border-radius: 48%;
@@ -113,9 +113,11 @@ md-user-avatar>img {
     position: relative!important;
     z-index: 0;
   }
+
   #about {
     margin-top: 1vh;
     position:relative;
+    width: 
   }
 
   #thumbnail {

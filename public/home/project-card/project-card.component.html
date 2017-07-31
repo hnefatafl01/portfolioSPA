@@ -39,7 +39,7 @@
                 </md-button>
                 <md-button 
                     class="md-icon-button"
-                    ng-click="$ctrl.summary = !$ctrl.details; $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $index">
+                    ng-click="$ctrl.summary = !$ctrl.details; $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $ctrl.index; ">
                     <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_up"></ng-md-icon>
                     <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_down"></ng-md-icon>
                     <md-tooltip md-direction="top">Details</md-tooltip>
@@ -48,7 +48,7 @@
         </div>
 
 <!-- details -->
-        <project-details project="$ctrl.data"></project-details>
+         <!-- <project-details project="$ctrl.data" index="$ctrl.index"></project-details>  -->
 <!-- details -->
         </div>
 

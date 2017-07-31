@@ -1,20 +1,34 @@
 <main
-      layout="row"
+      layout="column"
       layout-sm="column">
-  <div id="mainDiv"
-      class="md-padding"
-      flex-gt-xs="70"
-      flex-offset-gt-xs="15"
-      flex-gt-sm="70"
-      flex-offset-gt-sm="15">
-      <about></about>
-<!-- projects -->
-    <md-content id="projects" layout="row" layout-align=" center" layout-wrap>
-      <md-toolbar layout="row" layout-align="start">
-        <h2 id="project-header">Projects</h2>
-      </md-toolbar>
-<!-- project card -->
-      <project-card data="project" ng-repeat="project in $ctrl.projects"></project-card>
-    </md-content>
+  <div
+      layout="row">    
+    <div 
+        layout="column"
+        layout-align="start center"
+        flex-gt-xs="80"
+        flex-offset-gt-xs="10"
+        >
+        <about></about>
+  <!-- projects -->
+      <md-content 
+          id="projects" 
+          layout="row" 
+          layout-align="start center" 
+          layout-wrap>
+          <md-toolbar layout="row" layout-align="start">
+            <h2 id="project-header">Projects</h2>
+          </md-toolbar>
+  <!-- project card -->
+          <project-card
+            layout="column"
+            flex-gt-sm="33" 
+            data="project" 
+            index="$index" 
+            ng-repeat="project in $ctrl.projects track by $index">
+          </project-card>
+        <!-- <project-details project="$ctrl.data" index="$ctrl.index"></project-details> -->
+      </md-content>
+    </div>
   </div>
 </main>

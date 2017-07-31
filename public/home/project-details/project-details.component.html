@@ -2,7 +2,8 @@
     layout-gt-sm="row"
     layout-xs="row"
     layout-sm="row"
-    ng-if="$ctrl.show === true && $ctrl.displayedIndex === $index">
+    ng-if="$ctrl.show === true && $ctrl.displayedIndex === $ctrl.index" 
+    >
     <md-card-content
         id="project-details"
         class="details"
@@ -10,11 +11,12 @@
         flex="100"
         flex-xs="auto"
         flex-sm="auto">
-        <p>{{project.description}}</p>
+        <p>{{$ctrl.data.description}}</p>
         <ul layout="row" layout-wrap>
-            <li ng-repeat="img in project.techImgs track by $index">
+            <li ng-repeat="img in $ctrl.data.techImgs track by $index">
             <img id="techImgs" ng-src="images/{{img}}" alt="tech">
             </li>
         </ul>
     </md-card-content>
 </div>
+ 

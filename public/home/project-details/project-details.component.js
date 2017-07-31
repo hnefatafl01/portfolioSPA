@@ -6,15 +6,17 @@
             controller: detailsCtrl,
             templateUrl: '/home/project-details/project-details.component.html',
             bindings: {
-                project: '='
+                data: '<',
+                index: '<'
             }
         });
     function detailsCtrl() {
         const vm = this;
 
         vm.$onInit = function() {
-            console.log('project-details');
-            console.log(vm.project);
+            // console.log('project-details', vm.project);
+            // console.log(vm.project);
+            console.log('details index',vm.index);
         };  
     }
 }());

@@ -14,7 +14,6 @@
         projectService.getProjects()
             .then(function(projects){
                 vm.projects = projects;
-                console.log(vm.projects)
             });
       };
     }
