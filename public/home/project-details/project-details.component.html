@@ -1,22 +1,40 @@
-<div
-    layout-gt-sm="row"
-    layout-xs="row"
-    layout-sm="row"
-    ng-if="$ctrl.show === true && $ctrl.displayedIndex === $ctrl.index" 
-    >
-    <md-card-content
-        id="project-details"
-        class="details"
-        layout="column"
-        flex="100"
-        flex-xs="auto"
-        flex-sm="auto">
-        <p>{{$ctrl.data.description}}</p>
+<md-dialog aria-label="Project Details">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>{{project.title}}</h2>
+        <span flex></span>
+        <h4>{{project.date}}</h4>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <i class="material-icons">clear</i>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <h2>version: {{project.version}}</h2>
+        <p>{{project.description}}</p>
         <ul layout="row" layout-wrap>
-            <li ng-repeat="img in $ctrl.data.techImgs track by $index">
-            <img id="techImgs" ng-src="images/{{img}}" alt="tech">
+            <li ng-repeat="img in project.techImgs track by $index">
+                 <img id="techImgs" ng-src="images/{{img}}" alt="tech">
             </li>
         </ul>
-    </md-card-content>
-</div>
- 
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button href="{{project.github}}" target="_blank" md-autofocus>
+        github
+      </md-button>
+      <span flex></span>
+      <md-button href="{{project.deployed}}" ng-disabled="$ctrl.checkLive()">
+       view live
+      </md-button>
+      <!-- <md-button href="#">
+        view video
+      </md-button> -->
+    </md-dialog-actions>
+  </form>
+</md-dialog>

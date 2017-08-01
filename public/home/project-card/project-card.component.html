@@ -1,19 +1,13 @@
-<md-card 
-    id="card" 
-    class="grow"
-    layout="column"
-    layout-xs="row"
-    layout-sm="row"
-    ng-class="{'activate': $ctrl.details}"
-    >
-<!-- layout-align="center start" -->
+<md-card id="card">
+    <!-- ng-class="{'activate': $ctrl.details}" -->
     <md-card-content >
         <div
             layout-gt-sm="row"
             layout-align="center"
             flex="33"
             layout-sm="column"
-            layout-align-xs="center" layout-align-sm="center">
+            layout-align-xs="center" 
+            layout-align-sm="center">
             <div 
                 id="summary" 
                 layout=column 
@@ -22,7 +16,6 @@
                 <div layout="column" layout-align="center center">
                 <h2>{{$ctrl.data.title}}</h2>
                 <h4 id="snippet">{{$ctrl.data.snippet}}</h4>
-                <!-- <h6>{{$ctrl.data.version}} {{$ctrl.data.date}}</h6> -->
             </div>
             <md-card-actions 
                 id="project-buttons"
@@ -39,19 +32,13 @@
                 </md-button>
                 <md-button 
                     class="md-icon-button"
-                    ng-click="$ctrl.summary = !$ctrl.details; $ctrl.show = !$ctrl.show; $ctrl.displayedIndex = $ctrl.index; ">
-                    <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_up"></ng-md-icon>
-                    <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_down"></ng-md-icon>
+                    ng-click="$ctrl.showDetails($ctrl.data); $ctrl.show = !$ctrl.show;"> 
+                    <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_up"></ng-md-icon>
+                    <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_down"></ng-md-icon>
                     <md-tooltip md-direction="top">Details</md-tooltip>
                 </md-button>
             </md-card-actions>
         </div>
-
-<!-- details -->
-         <!-- <project-details project="$ctrl.data" index="$ctrl.index"></project-details>  -->
-<!-- details -->
-        </div>
-
         </div>
     </md-card-content>
 </md-card>
