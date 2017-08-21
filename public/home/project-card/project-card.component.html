@@ -1,38 +1,40 @@
 <md-card id="card">
-    <!-- ng-class="{'activate': $ctrl.details}" -->
     <md-card-content >
         <div
             layout-gt-sm="row"
             layout-align="center"
             flex="33"
             layout-sm="column"
-            layout-align-xs="center" 
+            layout-align-xs="center"
             layout-align-sm="center">
-            <div 
-                id="summary" 
-                layout=column 
+            <div
+                id="summary"
+                layout=column
                 flex>
-                <img id="thumbnail" src="images/{{$ctrl.data.thumbnail}}" class="md-card-image" alt="project image">
+                <img id="thumbnail" ng-src="images/{{$ctrl.data.thumbnail}}" class="md-card-image" alt="project image">
                 <div layout="column" layout-align="center center">
                 <h2>{{$ctrl.data.title}}</h2>
                 <h4 id="snippet">{{$ctrl.data.snippet}}</h4>
             </div>
-            <md-card-actions 
+            <md-card-actions
                 id="project-buttons"
                 layout="row"
                 layout-align="space-around center">
-                <md-button class="md-icon-button" ng-href="{{$ctrl.data.github}}"><ng-md-icon icon="github-circle">
-                    <md-tooltip md-direction="top">Code on github</md-tooltip>
+                <md-button
+                    class="md-icon-button"
+                    ng-href="{{$ctrl.data.github}}">
+                      <ng-md-icon icon="github-circle">
+                      <md-tooltip md-direction="top">Code on github</md-tooltip>
                 </md-button>
-                <md-button 
-                    class="md-icon-button" 
+                <md-button
+                    class="md-icon-button"
                     ng-href="{{$ctrl.data.deployed}}">
-                    <ng-md-icon icon="link">
+                    <ng-md-icon ng-disabled="$ctrl.disabled" icon="link">
                     <md-tooltip md-direction="top">Live</md-tooltip>
                 </md-button>
-                <md-button 
+                <md-button
                     class="md-icon-button"
-                    ng-click="$ctrl.showDetails($ctrl.data); $ctrl.show = !$ctrl.show;"> 
+                    ng-click="$ctrl.showDetails($ctrl.data); $ctrl.show = !$ctrl.show;">
                     <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_up"></ng-md-icon>
                     <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_down"></ng-md-icon>
                     <md-tooltip md-direction="top">Details</md-tooltip>

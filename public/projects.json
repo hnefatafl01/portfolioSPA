@@ -7,7 +7,7 @@
     "thumbnail": "techne.png",
     "techImgs": ["ionic.jpeg","angular.png","js-logo.png", "node.png", "knex.png","psql.png","nvd3.png","express.png" , "bookshelfjs.png"],
     "date": "March 2017",
-    "deployed": "null",
+    "deployed": "",
     "github": "https://github.com/hnefatafl01/Techne"
   },
   {
@@ -18,7 +18,7 @@
     "thumbnail": "pandora.png",
     "techImgs": ["ionic.jpeg","raspberry-pi.png", "angular.png","node.png","express.png", "knex.png", "psql.png"],
     "date": "February 2017",
-    "deployed": "null",
+    "deployed": "",
     "github": "https://github.com/pandoras-box"
   },
   {

@@ -67,7 +67,7 @@ md-user-avatar>img {
 .projects-toolbar {
   margin: 8px;
   border-radius: 2px;
-  box-shadow: 1px 1px 2px #ccc; 
+  box-shadow: 1px 1px 2px #ccc;
 }
 
 .md-card .activate {
@@ -81,8 +81,8 @@ md-user-avatar>img {
 }*/
 
  #project-header {
-    margin-left: .4em; 
-} 
+    margin-left: .4em;
+}
 
 #project-buttons>md-fab {
   border-radius: 48%;
@@ -104,11 +104,15 @@ md-user-avatar>img {
   #about {
     margin-top: 1vh;
     position:relative;
-    width: 
+    width:
   }
 
   #thumbnail {
     width: 100%;
     margin: 0;
   }
+}
+
+ng-md-icon[disabled] svg {
+fill: rgba(0, 0, 0, 0.26);
 }

@@ -22,7 +22,6 @@
             },
             controller: ['$scope', 'project', function($scope, project) {
                 $scope.project = project;
-                console.log($scope.project);
                 $scope.hide = function() {
                     $mdDialog.hide();
                 };
@@ -39,9 +38,9 @@
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true,
-            
+
         });
       };
     }
-    
+
 }());
