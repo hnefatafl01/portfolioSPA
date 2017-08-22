@@ -31,14 +31,16 @@
                 $scope.answer = function(answer) {
                       $mdDialog.hide(answer);
                 };
+                $scope.checkDisabled = function() {
+                    return $scope.project.deployed ? true : false;
+                };
             }],
             templateUrl: '/home/project-details/project-details.component.html',
             controllerAs: 'ctrl',
             bindToController: true,
             parent: angular.element(document.body),
             targetEvent: ev,
-            clickOutsideToClose:true,
-
+            clickOutsideToClose: true
         });
       };
     }
