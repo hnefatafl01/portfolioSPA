@@ -1,38 +1,37 @@
 <main
-      layout="column"
-      layout-sm="column">
-  <div
-      layout="row">    
-    <div 
-        layout="column"
-        layout-align="start center"
-        flex-xs="100"
-        flex-gt-xs="80"
-        flex-offset-gt-xs="10">
-        <about></about>
-      <!-- projects-container -->
-      <md-content 
-          id="projects-container" 
-          layout-gt-xs="row"
-          layout-align="start center" 
-          layout-wrap>
-          <md-toolbar 
-            class="projects-toolbar" 
-            layout="row" 
-            layout-align="start">
-              <h2 id="project-header">Projects</h2>
-          </md-toolbar>
-          <!-- project card -->
-          <project-card
+    layout="column"
+    layout-sm="column">
+    <div layout="row">
+        <div
             layout="column"
-            layout-align="end end"
-            flex-gt-sm="33"
-            flex-sm="50"
-            data="project" 
-            index="$index" 
-            ng-repeat="project in $ctrl.projects track by $index">
-          </project-card>
-      </md-content>
-    </div>
+            layout-align="start center"
+            flex-xs="100"
+            flex-gt-xs="80"
+            flex-offset-gt-xs="10">
+            <about></about>
+          <!-- projects-container -->
+          <md-content
+              id="projects-container"
+              layout-gt-xs="row"
+              layout-align="space-between center"
+              layout-wrap>
+              <md-toolbar
+                class="projects-toolbar"
+                layout="row"
+                layout-align="start">
+                  <h2 id="project-header">Projects</h2>
+              </md-toolbar>
+              <!-- project card -->
+              <project-card
+                layout="column"
+                layout-align="start end"
+                flex-gt-sm="30"
+                flex-sm="50"
+                data="project"
+                index="$index"
+                ng-repeat="project in $ctrl.projects track by $index">
+              </project-card>
+          </md-content>
+        </div>
   </div>
 </main>

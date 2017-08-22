@@ -46,16 +46,18 @@ md-user-avatar>img {
 #card {
   position: relative;
   z-index: 0;
-  max-width: 357px;
+  max-width: 33vw;
+  margin-top: 32px;
 }
 
 #thumbnail {
   position: relative;
   z-index: 2;
-   width: 100%;
-    /* margin-top: -16px!important;
-   margin-left: -16px!important;
-  margin-right: -16px!important;     */
+  width: 350px;
+  max-width: 100%;
+  /*margin-top: -16px!important;
+  margin-left: -16px!important;
+  margin-right: -16px!important;*/
 }
 
 #project-title {
@@ -88,6 +90,10 @@ md-user-avatar>img {
   height: 14vh;
 }
 
+ng-md-icon[disabled] svg {
+fill: rgba(0, 0, 0, 0.26);
+}
+
 @media (max-width: 960px) {
   #banner {
     width: 100vw;
@@ -97,16 +103,11 @@ md-user-avatar>img {
 
   #about {
     margin-top: 1vh;
-    position:relative;
-    width:
+    position: relative;
   }
 
   #thumbnail {
     width: 100%;
     margin: 0;
   }
-}
-
-ng-md-icon[disabled] svg {
-fill: rgba(0, 0, 0, 0.26);
 }

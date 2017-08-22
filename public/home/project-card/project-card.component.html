@@ -16,10 +16,10 @@
                 <h2>{{$ctrl.data.title}}</h2>
                 <h4 id="snippet">{{$ctrl.data.snippet}}</h4>
             </div>
-            <md-card-actions
+            <div
                 id="project-buttons"
                 layout="row"
-                layout-align="space-around center">
+                layout-align="space-between center">
                 <md-button
                     class="md-icon-button"
                     ng-href="{{$ctrl.data.github}}">
@@ -39,7 +39,7 @@
                     <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_down"></ng-md-icon>
                     <md-tooltip md-direction="top">Details</md-tooltip>
                 </md-button>
-            </md-card-actions>
+            </div>
         </div>
         </div>
     </md-card-content>
