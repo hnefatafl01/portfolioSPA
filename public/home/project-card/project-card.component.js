@@ -11,7 +11,7 @@
             }
         });
 
-    function projectCtrl(detailService) {
+    function projectCtrl(detailFactory) {
         const vm = this;
 
         vm.$onInit = function() {
@@ -20,8 +20,9 @@
         };
 
         vm.showDetails = function(data) {
+            vm.show = !vm.show;
             vm.project = data;
-            detailService(vm.project);
+            detailFactory(vm.project);
         };
     }
 }());

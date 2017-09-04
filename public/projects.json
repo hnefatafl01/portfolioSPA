@@ -1,5 +1,16 @@
 [
   {
+    "title": "Movies To The Max",
+    "version": "1.0.0",
+    "description": "Easily Search for movie information & ratings with the Open Movie Database api (http://www.omdbapi.com/)",
+    "snippet": "Search favorite movies",
+    "thumbnail": "mtm-thumnail.png",
+    "techImgs": ["angular.png","node.png","express.png", "firebase.png", "heroku.png"],
+    "date": "September 2017",
+    "deployed": "https://movies-to-the-max.firebaseapp.com/",
+    "github": "https://github.com/hnefatafl01/Movies-To-The-Max"
+  },
+  {
     "title": "Techne",
     "version": "0.8.0",
     "description": "A comprehensive goal setting and fitness tracking application with graphic visualization using nvd3",

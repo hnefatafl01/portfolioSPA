@@ -10,7 +10,6 @@
       const vm = this;
 
       vm.$onInit = function() {
-        console.log('home loaded');
         projectService.getProjects()
             .then(function(projects){
                 vm.projects = projects;

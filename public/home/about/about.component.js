@@ -7,9 +7,9 @@
         });
 
     function aboutCtrl() {
-            const vm = this;
-            vm.$onInit = function() {
-                    console.log('about loaded');
-            }
+        const vm = this;
+        vm.$onInit = function() {
+          
+        }
     }
 }());

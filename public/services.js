@@ -3,7 +3,7 @@
 
   angular.module('app')
     .service('projectService', projectService)
-    .factory('detailService', detailService)
+    .factory('detailFactory', detailFactory)
 
     function projectService($http) {
       this.getProjects = function(){
@@ -14,7 +14,7 @@
       };
     }
 
-    function detailService($mdDialog) {
+    function detailFactory($mdDialog) {
       return function(data, ev){
         $mdDialog.show({
             locals: {
@@ -26,10 +26,7 @@
                     $mdDialog.hide();
                 };
                 $scope.cancel = function() {
-                      $mdDialog.cancel();
-                };
-                $scope.answer = function(answer) {
-                      $mdDialog.hide(answer);
+                    $mdDialog.cancel();
                 };
                 $scope.checkDisabled = function() {
                     return $scope.project.deployed ? true : false;
