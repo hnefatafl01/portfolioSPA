@@ -5,7 +5,7 @@
     "description": "Easily Search for movie information & ratings with the Open Movie Database api (http://www.omdbapi.com/)",
     "snippet": "search movies",
     "thumbnail": "mtm-thumbnail300.png",
-    "techImgs": ["angular.png","node.png","express.png", "firebase.png", "heroku.png"],
+    "techImgs": ["angular.png","node.png","express.png", "bootstrap.png", "firebase.png", "heroku.png"],
     "date": "September 2017",
     "deployed": "https://movies-to-the-max.firebaseapp.com/",
     "github": "https://github.com/hnefatafl01/Movies-To-The-Max"
