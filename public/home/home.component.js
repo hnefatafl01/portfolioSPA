@@ -6,7 +6,7 @@
       templateUrl: '/home/home.component.html'
     })
 
-    function homeCtrl(projectService) {
+    function homeCtrl(projectService, $scope, $location, $anchorScroll) {
       const vm = this;
 
       vm.$onInit = function() {
@@ -15,5 +15,10 @@
                 vm.projects = projects;
             });
       };
+
+      vm.top = function() {
+        $location.hash('top');
+        $anchorScroll();
+      }
     }
 }());

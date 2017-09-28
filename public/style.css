@@ -85,6 +85,13 @@ md-user-avatar>img {
   background-color: #FAFAFA;
 }
 
+#fab-scroll-top {
+  position: fixed;
+  z-index: 100000;
+  bottom: 48px;
+  right: 48px;
+}
+
 #footer {
   margin-top: 8px;
   height: 14vh;

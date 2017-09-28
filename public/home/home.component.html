@@ -1,4 +1,5 @@
 <main
+    id="top"
     layout="column"
     layout-sm="column">
     <div layout="row">
@@ -33,5 +34,9 @@
               </project-card>
           </md-content>
         </div>
+        <md-button id="fab-scroll-top"class="md-fab" aria-label="Back to top" ng-click="$ctrl.top()">
+          <md-icon md-svg-src="images/ic_expand_less_white_24px.svg"></md-icon>
+          <md-tooltip md-direction="top">Back to top</md-tooltip>
+        </md-button>
   </div>
 </main>
