@@ -13,6 +13,7 @@
           <!-- projects-container -->
           <md-content
               id="projects-container"
+              layout-xs="column"
               layout-gt-xs="row"
               layout-align="space-around center"
               layout-wrap>
@@ -27,7 +28,7 @@
                 layout="column"
                 layout-align="start end"
                 flex-gt-sm="30"
-                flex-sm="50"
+                flex-sm="40"
                 data="project"
                 index="$index"
                 ng-repeat="project in $ctrl.projects track by $index">
