@@ -43,7 +43,8 @@
     "techImgs": ["ionic.jpeg","angular.png","js-logo.png", "node.png", "knex.png","psql.png","nvd3.png","express.png" , "bookshelfjs.png"],
     "date": "March 2017",
     "deployed": "",
-    "github": "https://github.com/hnefatafl01/Techne"
+    "github": "https://github.com/hnefatafl01/Techne",
+    "youTube": "https://youtu.be/Sa4y5D0Ft-k"
   },
   {
     "title": "Pandora's Box",
@@ -77,7 +78,7 @@
     "date": "November 2016",
     "deployed": "https://gitfit-8d961.firebaseapp.com/",
     "github": "https://github.com/hnefatafl01/GitFit/tree/master/client",
-    "youTube": ""
+    "youTube": "https://youtu.be/g83JiNDj_FU"
   },
   {
     "title": "Hipster Troll",
