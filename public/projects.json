@@ -1,5 +1,17 @@
 [
   {
+    "title": "Ekberg Home Solutions",
+    "version": "1.0.0",
+    "snippet": "Content management platform",
+    "description": "Dashboard with links, descriptions & announcement board for a business' entities",
+    "techImgs": [ "angular.png","firebase.png"],
+    "thumbnail": "ehs.png",
+    "date": "October 2017",
+    "deployed": "ekberg-home-solutions.firebaseapp.com",
+    "github": "https://github.com/hnefatafl01/ehs/blob/master/README.md",
+    "youTube": "https://youtu.be/IfpWD_pM1sQ"
+  },
+  {
     "title": "Shop-it",
     "version": "1.0.0",
     "snippet": "Angular shopping cart feature",
