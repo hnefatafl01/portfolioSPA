@@ -23,13 +23,10 @@
             controller: ['$scope', 'project', function($scope, project) {
                 $scope.project = project;
                 $scope.hide = function() {
-                    let show = false;
-                    $mdDialog.hide(show);
+                    $mdDialog.hide();
                 };
                 $scope.cancel = function() {
-                    let show = false;
-                    $mdDialog.cancel(show);
-                    return show;
+                    $mdDialog.cancel();
                 };
                 $scope.checkDisabled = function() {
                     return $scope.project.deployed ? true : false;
