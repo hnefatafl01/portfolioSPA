@@ -15,7 +15,7 @@
     }
 
     function detailFactory($mdDialog) {
-      return function(data, ev){
+      return function(data, event){
         $mdDialog.show({
             locals: {
                 project: data
@@ -23,10 +23,13 @@
             controller: ['$scope', 'project', function($scope, project) {
                 $scope.project = project;
                 $scope.hide = function() {
-                    $mdDialog.hide();
+                    let show = false;
+                    $mdDialog.hide(show);
                 };
                 $scope.cancel = function() {
-                    $mdDialog.cancel();
+                    let show = false;
+                    $mdDialog.cancel(show);
+                    return show;
                 };
                 $scope.checkDisabled = function() {
                     return $scope.project.deployed ? true : false;
@@ -36,7 +39,7 @@
             controllerAs: 'ctrl',
             bindToController: true,
             parent: angular.element(document.body),
-            targetEvent: ev,
+            targetEvent: event,
             clickOutsideToClose: true
         });
       };

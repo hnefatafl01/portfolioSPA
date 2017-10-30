@@ -34,9 +34,8 @@
                 </md-button>
                 <md-button
                     class="md-icon-button"
-                    ng-click="$ctrl.showDetails($ctrl.data);">
-                    <ng-md-icon ng-if="$ctrl.show === true" icon="keyboard_arrow_up"></ng-md-icon>
-                    <ng-md-icon ng-if="$ctrl.show === false" icon="keyboard_arrow_down"></ng-md-icon>
+                    ng-click="$ctrl.showDetails($ctrl.data, $event);">
+                    <ng-md-icon icon="more_vert"></ng-md-icon>
                     <md-tooltip md-direction="top">Details</md-tooltip>
                 </md-button>
             </div>
