@@ -25,11 +25,11 @@
     </md-dialog-content>
 
     <md-dialog-actions layout="row">
-      <md-button href="{{project.github}}" target="_blank" md-autofocus>
+      <md-button ng-href="{{project.github}}" target="_blank" md-autofocus>
         github
       </md-button>
       <span flex></span>
-      <md-button href="{{project.deployed}}" ng-disabled="!checkDisabled();">
+      <md-button ng-href="{{project.deployed}}" ng-disabled="!checkDisabled();">
         view live
       </md-button>
       <!-- <md-button href="#">
