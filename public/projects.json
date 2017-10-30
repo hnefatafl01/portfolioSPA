@@ -12,12 +12,12 @@
     "youTube": "https://youtu.be/IfpWD_pM1sQ"
   },
   {
-    "title": "Shop-it",
+    "title": "Shop Suey",
     "version": "1.0.0",
     "snippet": "Angular shopping cart feature",
     "description": "Filter and sort products while shopping. State managed with NGRX.",
     "techImgs": [ "angular.png","ngrx.png"],
-    "thumbnail": "shop-it.png",
+    "thumbnail": "shop-suey.png",
     "date": "October 2017",
     "deployed": "",
     "github": "https://github.com/hnefatafl01/shop-it",
