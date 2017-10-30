@@ -16,7 +16,6 @@
 
     function detailFactory($mdDialog) {
       return function(data, ev){
-          console.log(ev)
         $mdDialog.show({
             locals: {
                 project: data
