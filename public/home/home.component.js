@@ -1,24 +1,25 @@
 (function() {
   'use strict';
-  angular.module('app')
-    .component('home', {
+  angular.module("app")
+    .component("home", {
       controller: homeCtrl,
       templateUrl: '/home/home.component.html'
     })
+    // .component("modal", {
+    //   controller: modalCtrl,
+    //   templateUrl: '/home/home.modal.html'
+    // })
 
-    function homeCtrl(projectService, $scope, $location, $anchorScroll) {
+    function homeCtrl(projectService) {
       const vm = this;
 
-      vm.$onInit = function() {
+      vm.$onInit = function($index){
+        vm.displayedIndex = false;
+        vm.show = false;
         projectService.getProjects()
-            .then(function(projects){
-                vm.projects = projects;
-            });
-      };
-
-      vm.top = function() {
-        $location.hash('top');
-        $anchorScroll();
+          .then(function(projects){
+            vm.projects = projects;
+          })
       }
     }
 }());

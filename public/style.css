@@ -27,14 +27,20 @@ main {
   margin-bottom: -48px;
   z-index: 0;
 }
-/* About */
+
 #about {
   z-index: 99;
   position:relative;
 }
-/* Projects */
-#projects-container {
+
+#projects {
   background-color: rgba(255,255,255,.8);
+}
+
+md-toolbar {
+  margin: 8px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #ccc;
 }
 
 md-user-avatar>img {
@@ -46,18 +52,15 @@ md-user-avatar>img {
 #card {
   position: relative;
   z-index: 0;
-  max-width: 33vw;
-  margin-top: 32px;
 }
 
 #thumbnail {
   position: relative;
   z-index: 2;
-  width: 350px;
-  max-width: 100%;
-  /*margin-top: -16px!important;
+  width: 300px;
+  margin-top: -16px!important;
   margin-left: -16px!important;
-  margin-right: -16px!important;*/
+  margin-right: -16px!important;
 }
 
 #project-title {
@@ -66,18 +69,32 @@ md-user-avatar>img {
   color: #FFFFFF;
 }
 
-.projects-toolbar {
-  margin: 8px;
-  border-radius: 2px;
-  box-shadow: 1px 1px 2px #ccc;
+#modal {
+
+}
+
+#project-details {
+  margin-left: 32px;
+}
+
+#summary {
+  min-width: 18vw;
+  max-width: 300px;
+  position: relative;
 }
 
 .md-card .activate {
   position: absolute!important;
 }
 
+/*.grow:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05)!important;
+}*/
+
 #project-header {
-    margin-left: .4em;
+  margin-left: .4em;
 }
 
 #project-buttons>md-fab {
@@ -85,40 +102,24 @@ md-user-avatar>img {
   background-color: #FAFAFA;
 }
 
-#fab-scroll-top {
-  position: fixed;
-  z-index: 100000;
-  bottom: 48px;
-  right: 48px;
-}
-/* FOOTER */
 #footer {
   margin-top: 8px;
   height: 14vh;
 }
 
-ng-md-icon[disabled] svg {
-fill: rgba(0, 0, 0, 0.26);
-}
-/* MEDIA QUERIES */
 @media (max-width: 960px) {
   #banner {
     width: 100vw;
     position: relative!important;
     z-index: 0;
   }
-
   #about {
     margin-top: 1vh;
-    position: relative;
+    position:relative;
   }
 
   #thumbnail {
     width: 100%;
     margin: 0;
-  }
-
-  #card {
-    max-width: 100vw !important;
   }
 }
