@@ -18,7 +18,7 @@
         <p>{{project.description}}</p>
         <ul layout="row" layout-wrap>
             <li ng-repeat="img in project.techImgs track by $index">
-              <img id="techImgs" ng-src="images/{{img}}" alt="tech">
+              <img ng-cloak id="techImgs" ng-src="images/{{img}}" alt="tech">
             </li>
         </ul>
       </div>
