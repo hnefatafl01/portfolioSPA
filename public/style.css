@@ -41,8 +41,7 @@ main {
   background-color: rgba(255,255,255,.8);
 }
 
-md-toolbar {
-  /* margin: 8px; */
+.md-toolbar {
   border-radius: 2px;
   box-shadow: 1px 1px 2px #ccc;
 }
