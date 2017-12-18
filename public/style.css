@@ -102,7 +102,10 @@ md-user-avatar>img {
 }
 
 #fab-scroll-top {
-  align-self: flex-end;
+  /* align-self: flex-end; */
+  position: fixed;
+  top: 87%;
+  right: 3%;
 }
 
 @media (max-width: 960px) {
