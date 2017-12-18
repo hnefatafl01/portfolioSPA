@@ -42,7 +42,7 @@ main {
 }
 
 md-toolbar {
-  margin: 8px;
+  /* margin: 8px; */
   border-radius: 2px;
   box-shadow: 1px 1px 2px #ccc;
 }
@@ -73,10 +73,6 @@ md-user-avatar>img {
   color: #FFFFFF;
 }
 
-#modal {
-
-}
-
 #project-details {
   margin-left: 32px;
 }
@@ -91,12 +87,6 @@ md-user-avatar>img {
   position: absolute!important;
 }
 
-/*.grow:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05)!important;
-}*/
-
 #project-header {
   margin-left: .4em;
 }
@@ -109,6 +99,10 @@ md-user-avatar>img {
 #footer {
   margin-top: 8px;
   height: 14vh;
+}
+
+#fab-scroll-top {
+  align-self: flex-end;
 }
 
 @media (max-width: 960px) {

@@ -21,5 +21,9 @@
             vm.projects = projects;
           })
       }
+
+      vm.top = function() {
+        document.getElementById('about').scrollIntoView({ alignToTop: true, behavior: "smooth" });
+      }
     }
 }());
