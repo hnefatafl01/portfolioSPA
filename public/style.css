@@ -103,6 +103,7 @@ md-user-avatar>img {
 
 #fab-scroll-top {
   /* align-self: flex-end; */
+  color: #fff;
   position: fixed;
   top: 87%;
   right: 3%;
